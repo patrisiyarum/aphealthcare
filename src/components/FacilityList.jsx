@@ -12,6 +12,13 @@ export default function FacilityList({
 
   const startIdx = (currentPage - 1) * 10;
 
+  // Sort preferred (markedGreen) facilities to the top of each page
+  const sorted = [...facilities].sort((a, b) => {
+    if (a.markedGreen && !b.markedGreen) return -1;
+    if (!a.markedGreen && b.markedGreen) return 1;
+    return 0;
+  });
+
   return (
     <div className="results-section">
       <div className="results-bar">
@@ -30,7 +37,7 @@ export default function FacilityList({
       </div>
 
       <div className="results-cards">
-        {facilities.map((facility, index) => (
+        {sorted.map((facility, index) => (
           <FacilityCard
             key={facility.id}
             facility={facility}

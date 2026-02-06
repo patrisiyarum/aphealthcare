@@ -138,17 +138,13 @@ export default function App() {
       {/* ===== HEADER ===== */}
       <header className="header">
         <div className="header-inner">
-          <div className="header-brand">
-            <img src="/logo.png" alt="AP Healthcare" className="header-logo" />
-            <div className="header-text">
-              <h1>AP Healthcare</h1>
-              <span className="header-tagline">FOCUS ON TREATMENT</span>
-            </div>
-          </div>
-          <p className="header-description">
+          <img src="/logo.png" alt="AP Healthcare — Focus on Treatment" className="header-logo" />
+        </div>
+        <div className="header-bar">
+          <div className="header-bar-inner">
             Find the nearest healthcare facility by driving distance, language,
             and rating
-          </p>
+          </div>
         </div>
       </header>
 

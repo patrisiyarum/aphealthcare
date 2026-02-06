@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 
 const CATEGORIES = [
   "All Categories",
@@ -35,6 +35,92 @@ export default function SearchForm({ onSearch, isLoading }) {
   const [rating, setRating] = useState("");
   const [maxDistance, setMaxDistance] = useState("");
   const [locating, setLocating] = useState(false);
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [activeSuggestion, setActiveSuggestion] = useState(-1);
+  const debounceRef = useRef(null);
+  const wrapperRef = useRef(null);
+
+  // Close suggestions when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
+        setShowSuggestions(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const fetchSuggestions = useCallback((query) => {
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    if (query.trim().length < 3) {
+      setSuggestions([]);
+      setShowSuggestions(false);
+      return;
+    }
+    debounceRef.current = setTimeout(async () => {
+      try {
+        const encoded = encodeURIComponent(query);
+        const res = await fetch(
+          `https://photon.komoot.io/api/?q=${encoded}&limit=5&lang=en&lat=33.75&lon=-84.39`
+        );
+        const data = await res.json();
+        if (data && data.features) {
+          const items = data.features.map((f) => {
+            const p = f.properties;
+            const parts = [
+              p.housenumber,
+              p.street,
+              p.city || p.name,
+              p.state,
+              p.postcode,
+              p.country,
+            ].filter(Boolean);
+            return parts.join(", ");
+          });
+          setSuggestions(items);
+          setShowSuggestions(items.length > 0);
+          setActiveSuggestion(-1);
+        }
+      } catch {
+        setSuggestions([]);
+        setShowSuggestions(false);
+      }
+    }, 300);
+  }, []);
+
+  const handleAddressChange = (e) => {
+    const val = e.target.value;
+    setAddress(val);
+    fetchSuggestions(val);
+  };
+
+  const selectSuggestion = (suggestion) => {
+    setAddress(suggestion);
+    setSuggestions([]);
+    setShowSuggestions(false);
+  };
+
+  const handleKeyDown = (e) => {
+    if (!showSuggestions || suggestions.length === 0) return;
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setActiveSuggestion((prev) =>
+        prev < suggestions.length - 1 ? prev + 1 : 0
+      );
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setActiveSuggestion((prev) =>
+        prev > 0 ? prev - 1 : suggestions.length - 1
+      );
+    } else if (e.key === "Enter" && activeSuggestion >= 0) {
+      e.preventDefault();
+      selectSuggestion(suggestions[activeSuggestion]);
+    } else if (e.key === "Escape") {
+      setShowSuggestions(false);
+    }
+  };
 
   const useMyLocation = useCallback(() => {
     if (!navigator.geolocation) {
@@ -111,16 +197,37 @@ export default function SearchForm({ onSearch, isLoading }) {
             </svg>
             Your Street Address
           </label>
-          <div className="address-row">
-            <input
-              id="address"
-              type="text"
-              className="field-input"
-              value={address}
-              onChange={(e) => setAddress(e.target.value)}
-              placeholder="e.g. 123 Peachtree St, Atlanta, GA 30301"
-              required
-            />
+          <div className="address-row" ref={wrapperRef}>
+            <div className="address-input-wrap">
+              <input
+                id="address"
+                type="text"
+                className="field-input"
+                value={address}
+                onChange={handleAddressChange}
+                onKeyDown={handleKeyDown}
+                onFocus={() => suggestions.length > 0 && setShowSuggestions(true)}
+                placeholder="e.g. 123 Peachtree St, Atlanta, GA 30301"
+                autoComplete="off"
+                required
+              />
+              {showSuggestions && suggestions.length > 0 && (
+                <ul className="autocomplete-list">
+                  {suggestions.map((s, i) => (
+                    <li
+                      key={i}
+                      className={`autocomplete-item${i === activeSuggestion ? " autocomplete-item--active" : ""}`}
+                      onMouseDown={() => selectSuggestion(s)}
+                    >
+                      <svg viewBox="0 0 20 20" fill="currentColor" className="autocomplete-icon">
+                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                      </svg>
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
             <button
               type="button"
               className="btn-locate"

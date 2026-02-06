@@ -17,17 +17,19 @@
 }
 
 /* ============================================
-   LOGO BAR — white background, logo left
+   LOGO BAR — white background, logo centered
    ============================================ */
 .logobar {
   background: #fff;
-  border-bottom: 1px solid #eaeceb;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .logobar-inner {
   max-width: 940px;
   margin: 0 auto;
   padding: 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .logobar-img {
@@ -43,7 +45,7 @@
 .main {
   flex: 1;
   padding: 2rem 0 3rem;
-  background: #f5f6f5;
+  background: #fff;
 }
 
 /* ============================================
@@ -53,7 +55,8 @@
   background: #fff;
   border-radius: 10px;
   padding: 2rem;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   margin-bottom: 2rem;
 }
 
@@ -317,7 +320,8 @@
   border-radius: 10px;
   padding: 2.5rem 2rem;
   text-align: center;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   margin-bottom: 2rem;
 }
 
@@ -376,7 +380,8 @@
   color: #6b7280;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
 }
 
 /* ============================================
@@ -386,7 +391,8 @@
   background: #fff;
   border-radius: 10px;
   padding: 1.25rem;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   margin-bottom: 2rem;
 }
 
@@ -503,14 +509,14 @@
 .fcard {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   border: 1px solid #e5e7eb;
   overflow: hidden;
   transition: box-shadow 0.15s, transform 0.1s;
 }
 
 .fcard:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-1px);
 }
 

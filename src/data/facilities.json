@@ -10,8 +10,8 @@
     "language": "Russian",
     "rating": 1,
     "insurance": "",
-    "lat": 33.97438,
-    "lng": -84.415408
+    "lat": null,
+    "lng": null
   },
   {
     "id": 2,
@@ -24,8 +24,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.816866,
-    "lng": -84.390654
+    "lat": 33.8302174,
+    "lng": -84.3867636
   },
   {
     "id": 3,
@@ -38,8 +38,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.402624,
-    "lng": -84.710138
+    "lat": null,
+    "lng": null
   },
   {
     "id": 4,
@@ -52,8 +52,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.410045,
-    "lng": -84.565075
+    "lat": 33.4116733,
+    "lng": -84.5630145
   },
   {
     "id": 5,
@@ -66,8 +66,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 32.408781,
-    "lng": -81.765555
+    "lat": 32.4089952,
+    "lng": -81.7656988
   },
   {
     "id": 6,
@@ -80,8 +80,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 34.172844,
-    "lng": -84.550065
+    "lat": null,
+    "lng": null
   },
   {
     "id": 7,
@@ -94,8 +94,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.953449,
-    "lng": -84.231789
+    "lat": 33.9548506,
+    "lng": -84.2332622
   },
   {
     "id": 8,
@@ -108,8 +108,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.968944,
-    "lng": -84.557479
+    "lat": 33.9649543,
+    "lng": -84.5566351
   },
   {
     "id": 9,
@@ -122,8 +122,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.451902,
-    "lng": -84.506003
+    "lat": 33.4517244,
+    "lng": -84.5060876
   },
   {
     "id": 10,
@@ -136,8 +136,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.247769,
-    "lng": -85.164168
+    "lat": 34.2449154,
+    "lng": -85.1661612
   },
   {
     "id": 11,
@@ -150,8 +150,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.94666,
-    "lng": -83.398654
+    "lat": 33.9469374,
+    "lng": -83.3978712
   },
   {
     "id": 12,
@@ -164,8 +164,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 31.616399,
-    "lng": -84.220987
+    "lat": 31.6139116,
+    "lng": -84.2163208
   },
   {
     "id": 13,
@@ -178,8 +178,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.783044,
-    "lng": -83.716442
+    "lat": 33.7830967,
+    "lng": -83.716491
   },
   {
     "id": 14,
@@ -192,8 +192,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.512578,
-    "lng": -84.231239
+    "lat": 33.5135459,
+    "lng": -84.2326894
   },
   {
     "id": 15,
@@ -206,8 +206,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.792997,
-    "lng": -84.277832
+    "lat": 33.7917954,
+    "lng": -84.2980586
   },
   {
     "id": 16,
@@ -220,8 +220,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.780344,
-    "lng": -84.605938
+    "lat": 33.8006428,
+    "lng": -84.6497565
   },
   {
     "id": 17,
@@ -234,8 +234,8 @@
     "language": "Russian",
     "rating": 2,
     "insurance": "",
-    "lat": 33.841189,
-    "lng": -84.427063
+    "lat": 33.8401757,
+    "lng": -84.4266728
   },
   {
     "id": 18,
@@ -248,8 +248,8 @@
     "language": "Russian",
     "rating": 3,
     "insurance": "",
-    "lat": 34.284948,
-    "lng": -83.845157
+    "lat": 34.3019909,
+    "lng": -83.8157315
   },
   {
     "id": 19,
@@ -262,8 +262,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.973821,
-    "lng": -83.415036
+    "lat": 33.9738311,
+    "lng": -83.4150585
   },
   {
     "id": 20,
@@ -276,8 +276,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.481111,
-    "lng": -82.089146
+    "lat": 33.4819798,
+    "lng": -82.0895171
   },
   {
     "id": 21,
@@ -290,8 +290,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.512894,
-    "lng": -84.219039
+    "lat": 33.5184818,
+    "lng": -84.1937377
   },
   {
     "id": 22,
@@ -304,8 +304,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 32.839581,
-    "lng": -83.648105
+    "lat": 32.8402282,
+    "lng": -83.6476617
   },
   {
     "id": 23,
@@ -318,8 +318,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.774439,
-    "lng": -83.958976
+    "lat": 33.5169513,
+    "lng": -84.949452
   },
   {
     "id": 24,
@@ -332,8 +332,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.449677,
-    "lng": -84.506464
+    "lat": 33.4510669,
+    "lng": -84.5063802
   },
   {
     "id": 25,
@@ -346,8 +346,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.173591,
-    "lng": -84.128718
+    "lat": null,
+    "lng": null
   },
   {
     "id": 26,
@@ -360,8 +360,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.902897,
-    "lng": -84.77279
+    "lat": 33.903235,
+    "lng": -84.7725811
   },
   {
     "id": 27,
@@ -374,8 +374,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.909892,
-    "lng": -84.103867
+    "lat": 33.9382886,
+    "lng": -84.0272988
   },
   {
     "id": 28,
@@ -388,8 +388,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.9895,
-    "lng": -84.169111
+    "lat": 33.9894899,
+    "lng": -84.1691554
   },
   {
     "id": 29,
@@ -402,8 +402,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.592048,
-    "lng": -84.013485
+    "lat": 33.591561,
+    "lng": -84.0137011
   },
   {
     "id": 30,
@@ -416,8 +416,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 31.606151,
-    "lng": -84.172381
+    "lat": 31.604597,
+    "lng": -84.1702382
   },
   {
     "id": 31,
@@ -430,8 +430,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 32.481874,
-    "lng": -84.978081
+    "lat": 32.4816029,
+    "lng": -84.9777897
   },
   {
     "id": 32,
@@ -444,8 +444,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 34.321201,
-    "lng": -83.803986
+    "lat": 34.3215704,
+    "lng": -83.8040014
   },
   {
     "id": 33,
@@ -458,8 +458,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 34.039198,
-    "lng": -84.343283
+    "lat": 34.040411,
+    "lng": -84.3422343
   },
   {
     "id": 34,
@@ -472,8 +472,8 @@
     "language": "Russian",
     "rating": 1,
     "insurance": "",
-    "lat": 33.468356,
-    "lng": -82.014101
+    "lat": 33.4683902,
+    "lng": -82.014408
   },
   {
     "id": 35,
@@ -486,8 +486,8 @@
     "language": "Russian",
     "rating": 2,
     "insurance": "",
-    "lat": 32.482881,
-    "lng": -84.979427
+    "lat": 32.4826485,
+    "lng": -84.9800633
   },
   {
     "id": 36,
@@ -500,8 +500,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.23615,
-    "lng": -84.267144
+    "lat": 33.2365309,
+    "lng": -84.2670454
   },
   {
     "id": 37,
@@ -514,8 +514,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.79089,
-    "lng": -83.712615
+    "lat": 33.7792847,
+    "lng": -83.7178219
   },
   {
     "id": 38,
@@ -528,8 +528,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.825435,
-    "lng": -84.114696
+    "lat": null,
+    "lng": null
   },
   {
     "id": 39,
@@ -542,8 +542,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.908936,
-    "lng": -83.459028
+    "lat": null,
+    "lng": null
   },
   {
     "id": 40,
@@ -556,8 +556,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.788147,
-    "lng": -84.289726
+    "lat": 33.78793,
+    "lng": -84.289389
   },
   {
     "id": 41,
@@ -570,8 +570,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.236928,
-    "lng": -84.267132
+    "lat": 33.2371799,
+    "lng": -84.266906
   },
   {
     "id": 42,
@@ -584,8 +584,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 32.915026,
-    "lng": -83.696379
+    "lat": 32.9145867,
+    "lng": -83.6960587
   },
   {
     "id": 43,
@@ -598,8 +598,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.071004,
-    "lng": -84.174015
+    "lat": null,
+    "lng": null
   },
   {
     "id": 44,
@@ -612,8 +612,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.841776,
-    "lng": -84.426432
+    "lat": 33.8414884,
+    "lng": -84.426839
   },
   {
     "id": 45,
@@ -626,8 +626,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 34.047983,
-    "lng": -84.580006
+    "lat": 34.0480211,
+    "lng": -84.5799981
   },
   {
     "id": 46,
@@ -640,8 +640,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 32.009973,
-    "lng": -81.107331
+    "lat": 32.0087259,
+    "lng": -81.1089987
   },
   {
     "id": 47,
@@ -654,8 +654,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.9895,
-    "lng": -84.169111
+    "lat": 33.9894899,
+    "lng": -84.1691554
   },
   {
     "id": 48,
@@ -668,8 +668,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 31.987503,
-    "lng": -81.152122
+    "lat": 31.9839548,
+    "lng": -81.152533
   },
   {
     "id": 49,
@@ -682,8 +682,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.885459,
-    "lng": -84.258183
+    "lat": null,
+    "lng": null
   },
   {
     "id": 50,
@@ -696,8 +696,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.903151,
-    "lng": -84.376083
+    "lat": 33.9032617,
+    "lng": -84.3761969
   },
   {
     "id": 51,
@@ -710,8 +710,8 @@
     "language": "Russian",
     "rating": 3,
     "insurance": "",
-    "lat": 33.512578,
-    "lng": -84.231239
+    "lat": 33.5135459,
+    "lng": -84.2326894
   },
   {
     "id": 52,
@@ -724,8 +724,8 @@
     "language": "Russian",
     "rating": 1,
     "insurance": "",
-    "lat": 34.292973,
-    "lng": -83.832228
+    "lat": null,
+    "lng": null
   },
   {
     "id": 53,
@@ -738,8 +738,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.704189,
-    "lng": -84.157039
+    "lat": 33.7069712,
+    "lng": -84.1316686
   },
   {
     "id": 54,
@@ -752,8 +752,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.491518,
-    "lng": -82.496446
+    "lat": null,
+    "lng": null
   },
   {
     "id": 55,
@@ -766,8 +766,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.614865,
-    "lng": -84.448907
+    "lat": 33.613814,
+    "lng": -84.4489663
   },
   {
     "id": 56,
@@ -780,8 +780,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 32.023801,
-    "lng": -81.110918
+    "lat": 32.0238549,
+    "lng": -81.1117442
   },
   {
     "id": 57,
@@ -794,8 +794,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.780344,
-    "lng": -84.605938
+    "lat": 33.8006428,
+    "lng": -84.6497565
   },
   {
     "id": 58,
@@ -808,8 +808,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.491066,
-    "lng": -82.089227
+    "lat": 33.4900186,
+    "lng": -82.0927826
   },
   {
     "id": 59,
@@ -822,8 +822,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 31.188002,
-    "lng": -81.470276
+    "lat": null,
+    "lng": null
   },
   {
     "id": 60,
@@ -836,8 +836,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.812652,
-    "lng": -84.390137
+    "lat": 33.8126458,
+    "lng": -84.3901293
   },
   {
     "id": 61,
@@ -850,8 +850,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.257495,
-    "lng": -84.465564
+    "lat": 34.257607,
+    "lng": -84.464519
   },
   {
     "id": 62,
@@ -864,8 +864,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.793452,
-    "lng": -84.280362
+    "lat": null,
+    "lng": null
   },
   {
     "id": 63,
@@ -878,8 +878,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 34.068569,
-    "lng": -84.163091
+    "lat": null,
+    "lng": null
   },
   {
     "id": 64,
@@ -892,8 +892,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.961727,
-    "lng": -84.005326
+    "lat": 33.95929,
+    "lng": -84.0032593
   },
   {
     "id": 65,
@@ -906,8 +906,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.971149,
-    "lng": -84.549379
+    "lat": null,
+    "lng": null
   },
   {
     "id": 66,
@@ -920,8 +920,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.360949,
-    "lng": -84.754046
+    "lat": null,
+    "lng": null
   },
   {
     "id": 67,
@@ -934,8 +934,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.913378,
-    "lng": -84.348431
+    "lat": 33.9133989,
+    "lng": -84.3482183
   },
   {
     "id": 68,
@@ -948,8 +948,8 @@
     "language": "Russian",
     "rating": 2,
     "insurance": "",
-    "lat": 33.863008,
-    "lng": -84.622652
+    "lat": null,
+    "lng": null
   },
   {
     "id": 69,
@@ -962,8 +962,8 @@
     "language": "Russian",
     "rating": 3,
     "insurance": "",
-    "lat": 33.904309,
-    "lng": -84.433475
+    "lat": 33.9043967,
+    "lng": -84.4341883
   },
   {
     "id": 70,
@@ -976,8 +976,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.00178,
-    "lng": -81.036108
+    "lat": null,
+    "lng": null
   },
   {
     "id": 71,
@@ -990,8 +990,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 34.834831,
-    "lng": -82.339085
+    "lat": null,
+    "lng": null
   },
   {
     "id": 72,
@@ -1004,8 +1004,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 34.833967,
-    "lng": -82.403347
+    "lat": null,
+    "lng": null
   },
   {
     "id": 73,
@@ -1018,8 +1018,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.085978,
-    "lng": -81.182267
+    "lat": null,
+    "lng": null
   },
   {
     "id": 74,
@@ -1032,8 +1032,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 32.861587,
-    "lng": -79.797138
+    "lat": null,
+    "lng": null
   },
   {
     "id": 75,
@@ -1046,8 +1046,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.041372,
-    "lng": -80.141669
+    "lat": null,
+    "lng": null
   },
   {
     "id": 76,
@@ -1060,8 +1060,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.006819,
-    "lng": -81.1215
+    "lat": null,
+    "lng": null
   },
   {
     "id": 77,
@@ -1074,8 +1074,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.725697,
-    "lng": -84.76427
+    "lat": 33.7458572,
+    "lng": -84.7617982
   },
   {
     "id": 78,
@@ -1088,8 +1088,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.512724,
-    "lng": -84.224689
+    "lat": 33.5116204,
+    "lng": -84.2249302
   },
   {
     "id": 79,
@@ -1102,8 +1102,8 @@
     "language": "Russian",
     "rating": 1,
     "insurance": "",
-    "lat": 33.571401,
-    "lng": -84.331346
+    "lat": 33.5065005,
+    "lng": -84.2197621
   },
   {
     "id": 80,
@@ -1116,8 +1116,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.922446,
-    "lng": -84.212002
+    "lat": 33.9223903,
+    "lng": -84.2119505
   },
   {
     "id": 81,
@@ -1130,8 +1130,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 32.009973,
-    "lng": -81.107331
+    "lat": 32.0087259,
+    "lng": -81.1089987
   },
   {
     "id": 82,
@@ -1144,8 +1144,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.48413,
-    "lng": -82.093647
+    "lat": 33.4871798,
+    "lng": -82.0964787
   },
   {
     "id": 83,
@@ -1158,8 +1158,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.774439,
-    "lng": -83.958976
+    "lat": null,
+    "lng": null
   },
   {
     "id": 84,
@@ -1172,8 +1172,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.790245,
-    "lng": -84.278412
+    "lat": 33.7899305,
+    "lng": -84.2779662
   },
   {
     "id": 85,
@@ -1186,8 +1186,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.968621,
-    "lng": -84.41283
+    "lat": 33.968631,
+    "lng": -84.4127604
   },
   {
     "id": 86,
@@ -1200,8 +1200,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.705668,
-    "lng": -84.14853
+    "lat": 33.703415,
+    "lng": -84.146283
   },
   {
     "id": 87,
@@ -1214,8 +1214,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 33.869622,
-    "lng": -84.032542
+    "lat": 33.8691871,
+    "lng": -84.032749
   },
   {
     "id": 88,
@@ -1228,8 +1228,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.060374,
-    "lng": -84.316861
+    "lat": 34.0608552,
+    "lng": -84.3204908
   },
   {
     "id": 89,
@@ -1242,8 +1242,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 33.968352,
-    "lng": -84.010593
+    "lat": 33.968808,
+    "lng": -84.0079199
   },
   {
     "id": 90,
@@ -1256,8 +1256,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 34.06904,
-    "lng": -84.164744
+    "lat": 34.0689407,
+    "lng": -84.1646946
   },
   {
     "id": 91,
@@ -1270,8 +1270,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.257495,
-    "lng": -84.465564
+    "lat": 34.257607,
+    "lng": -84.464519
   },
   {
     "id": 92,
@@ -1284,8 +1284,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 34.210481,
-    "lng": -84.116305
+    "lat": 34.2092689,
+    "lng": -84.1241012
   },
   {
     "id": 93,
@@ -1298,8 +1298,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 34.121634,
-    "lng": -83.831635
+    "lat": 34.1217814,
+    "lng": -83.8289589
   },
   {
     "id": 94,
@@ -1312,8 +1312,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 33.586903,
-    "lng": -85.059017
+    "lat": null,
+    "lng": null
   },
   {
     "id": 95,
@@ -1326,8 +1326,8 @@
     "language": "Russian",
     "rating": 2,
     "insurance": "",
-    "lat": 34.793904,
-    "lng": -84.981754
+    "lat": 34.7746044,
+    "lng": -84.971809
   },
   {
     "id": 96,
@@ -1340,8 +1340,8 @@
     "language": "Russian",
     "rating": 3,
     "insurance": "",
-    "lat": 34.466162,
-    "lng": -84.446588
+    "lat": 34.4668476,
+    "lng": -84.4465433
   },
   {
     "id": 97,
@@ -1354,8 +1354,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.306596,
-    "lng": -83.825721
+    "lat": 34.3055874,
+    "lng": -83.8255764
   },
   {
     "id": 98,
@@ -1368,8 +1368,8 @@
     "language": "English",
     "rating": 2,
     "insurance": "",
-    "lat": 34.953715,
-    "lng": -85.248715
+    "lat": 34.953723,
+    "lng": -85.2487337
   },
   {
     "id": 99,
@@ -1382,8 +1382,8 @@
     "language": "English",
     "rating": 3,
     "insurance": "",
-    "lat": 34.100118,
-    "lng": -84.537207
+    "lat": 33.8751993,
+    "lng": -83.4319623
   },
   {
     "id": 100,
@@ -1396,8 +1396,8 @@
     "language": "English",
     "rating": 1,
     "insurance": "",
-    "lat": 34.0081,
-    "lng": -83.707852
+    "lat": 30.8396003,
+    "lng": -83.9820202
   },
   {
     "id": 101,
@@ -1409,9 +1409,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.248201,
-    "lng": -85.164225
+    "insurance": ""
   },
   {
     "id": 102,
@@ -1423,9 +1421,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.252116,
-    "lng": -83.46052
+    "insurance": ""
   },
   {
     "id": 103,
@@ -1437,9 +1433,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.10145,
-    "lng": -84.022671
+    "insurance": ""
   },
   {
     "id": 104,
@@ -1451,9 +1445,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.513555,
-    "lng": -84.215922
+    "insurance": ""
   },
   {
     "id": 105,
@@ -1465,9 +1457,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.059105,
-    "lng": -84.238291
+    "insurance": ""
   },
   {
     "id": 106,
@@ -1479,9 +1469,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.908573,
-    "lng": -84.355938
+    "insurance": ""
   },
   {
     "id": 107,
@@ -1493,9 +1481,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.586903,
-    "lng": -85.059017
+    "insurance": ""
   },
   {
     "id": 108,
@@ -1507,9 +1493,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.963043,
-    "lng": -83.393034
+    "insurance": ""
   },
   {
     "id": 109,
@@ -1521,9 +1505,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.136232,
-    "lng": -81.250592
+    "insurance": ""
   },
   {
     "id": 110,
@@ -1535,9 +1517,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.433378,
-    "lng": -81.778046
+    "insurance": ""
   },
   {
     "id": 111,
@@ -1549,9 +1529,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.676393,
-    "lng": -84.496432
+    "insurance": ""
   },
   {
     "id": 112,
@@ -1563,9 +1541,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 31.997471,
-    "lng": -81.113778
+    "insurance": ""
   },
   {
     "id": 113,
@@ -1577,9 +1553,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.839581,
-    "lng": -83.648105
+    "insurance": ""
   },
   {
     "id": 114,
@@ -1591,9 +1565,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.820162,
-    "lng": -84.453653
+    "insurance": ""
   },
   {
     "id": 115,
@@ -1605,9 +1577,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.40092,
-    "lng": -84.711398
+    "insurance": ""
   },
   {
     "id": 116,
@@ -1619,9 +1589,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.474299,
-    "lng": -81.995947
+    "insurance": ""
   },
   {
     "id": 117,
@@ -1633,9 +1601,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.236533,
-    "lng": -84.265442
+    "insurance": ""
   },
   {
     "id": 118,
@@ -1647,9 +1613,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.825435,
-    "lng": -84.114696
+    "insurance": ""
   },
   {
     "id": 119,
@@ -1661,9 +1625,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.999332,
-    "lng": -84.145686
+    "insurance": ""
   },
   {
     "id": 120,
@@ -1675,9 +1637,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.191225,
-    "lng": -84.791369
+    "insurance": ""
   },
   {
     "id": 121,
@@ -1689,9 +1649,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.920762,
-    "lng": -83.705565
+    "insurance": ""
   },
   {
     "id": 122,
@@ -1703,9 +1661,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.530304,
-    "lng": -82.946654
+    "insurance": ""
   },
   {
     "id": 123,
@@ -1717,9 +1673,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.612704,
-    "lng": -83.700177
+    "insurance": ""
   },
   {
     "id": 124,
@@ -1731,9 +1685,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 35.054757,
-    "lng": -85.17986
+    "insurance": ""
   },
   {
     "id": 125,
@@ -1745,9 +1697,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 36.021615,
-    "lng": -84.222358
+    "insurance": ""
   },
   {
     "id": 126,
@@ -1759,9 +1709,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 35.17418,
-    "lng": -84.855647
+    "insurance": ""
   },
   {
     "id": 127,
@@ -1773,9 +1721,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 35.892762,
-    "lng": -84.173812
+    "insurance": ""
   },
   {
     "id": 128,
@@ -1787,9 +1733,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.334602,
-    "lng": -90.093183
+    "insurance": ""
   },
   {
     "id": 129,
@@ -1801,9 +1745,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "Russian",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.370351,
-    "lng": -88.689047
+    "insurance": ""
   },
   {
     "id": 130,
@@ -1815,9 +1757,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 31.31392,
-    "lng": -89.462552
+    "insurance": ""
   },
   {
     "id": 131,
@@ -1829,9 +1769,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.230474,
-    "lng": -84.265812
+    "insurance": ""
   },
   {
     "id": 132,
@@ -1843,9 +1781,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.959583,
-    "lng": -84.006849
+    "insurance": ""
   },
   {
     "id": 133,
@@ -1857,9 +1793,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.648663,
-    "lng": -84.465691
+    "insurance": ""
   },
   {
     "id": 134,
@@ -1871,9 +1805,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.970094,
-    "lng": -83.409354
+    "insurance": ""
   },
   {
     "id": 135,
@@ -1885,9 +1817,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 31.822995,
-    "lng": -81.630258
+    "insurance": ""
   },
   {
     "id": 136,
@@ -1899,9 +1829,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.103894,
-    "lng": -81.146659
+    "insurance": ""
   },
   {
     "id": 137,
@@ -1913,9 +1841,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.003643,
-    "lng": -81.111831
+    "insurance": ""
   },
   {
     "id": 138,
@@ -1927,9 +1853,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 31.19478,
-    "lng": -81.479746
+    "insurance": ""
   },
   {
     "id": 139,
@@ -1941,9 +1865,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.495336,
-    "lng": -84.964147
+    "insurance": ""
   },
   {
     "id": 140,
@@ -1955,9 +1877,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.780361,
-    "lng": -84.610222
+    "insurance": ""
   },
   {
     "id": 141,
@@ -1969,9 +1889,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.923272,
-    "lng": -84.352721
+    "insurance": ""
   },
   {
     "id": 142,
@@ -1983,9 +1901,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.792765,
-    "lng": -84.962665
+    "insurance": ""
   },
   {
     "id": 143,
@@ -1997,9 +1913,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.505489,
-    "lng": -84.225673
+    "insurance": ""
   },
   {
     "id": 144,
@@ -2011,9 +1925,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.648663,
-    "lng": -84.465691
+    "insurance": ""
   },
   {
     "id": 145,
@@ -2025,9 +1937,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.971267,
-    "lng": -84.553238
+    "insurance": ""
   },
   {
     "id": 146,
@@ -2039,9 +1949,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "Russian",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.002514,
-    "lng": -84.076972
+    "insurance": ""
   },
   {
     "id": 147,
@@ -2053,9 +1961,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.47213,
-    "lng": -84.972104
+    "insurance": ""
   },
   {
     "id": 148,
@@ -2067,9 +1973,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.063046,
-    "lng": -84.323419
+    "insurance": ""
   },
   {
     "id": 149,
@@ -2081,9 +1985,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.823023,
-    "lng": -84.251455
+    "insurance": ""
   },
   {
     "id": 150,
@@ -2095,9 +1997,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 35.715136,
-    "lng": -79.810971
+    "insurance": ""
   },
   {
     "id": 151,
@@ -2109,9 +2009,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 35.04042,
-    "lng": -78.913489
+    "insurance": ""
   },
   {
     "id": 152,
@@ -2123,9 +2021,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.791388,
-    "lng": -77.419429
+    "insurance": ""
   },
   {
     "id": 153,
@@ -2137,9 +2033,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.750911,
-    "lng": -79.469555
+    "insurance": ""
   },
   {
     "id": 154,
@@ -2151,9 +2045,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.750779,
-    "lng": -79.461973
+    "insurance": ""
   },
   {
     "id": 155,
@@ -2165,9 +2057,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.927186,
-    "lng": -79.757162
+    "insurance": ""
   },
   {
     "id": 156,
@@ -2179,9 +2069,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 35.169808,
-    "lng": -79.400781
+    "insurance": ""
   },
   {
     "id": 157,
@@ -2193,9 +2081,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.338513,
-    "lng": -78.686323
+    "insurance": ""
   },
   {
     "id": 158,
@@ -2207,9 +2093,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.239853,
-    "lng": -77.908486
+    "insurance": ""
   },
   {
     "id": 159,
@@ -2221,9 +2105,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.765803,
-    "lng": -82.349265
+    "insurance": ""
   },
   {
     "id": 160,
@@ -2235,9 +2117,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.765803,
-    "lng": -82.349265
+    "insurance": ""
   },
   {
     "id": 161,
@@ -2249,9 +2129,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.941573,
-    "lng": -81.996775
+    "insurance": ""
   },
   {
     "id": 162,
@@ -2263,9 +2141,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 35.029837,
-    "lng": -85.156864
+    "insurance": ""
   },
   {
     "id": 163,
@@ -2277,9 +2153,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.016605,
-    "lng": -81.111659
+    "insurance": ""
   },
   {
     "id": 164,
@@ -2291,9 +2165,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 31.933323,
-    "lng": -81.325676
+    "insurance": ""
   },
   {
     "id": 165,
@@ -2305,9 +2177,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 31.832171,
-    "lng": -81.596462
+    "insurance": ""
   },
   {
     "id": 166,
@@ -2319,9 +2189,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 31.587107,
-    "lng": -81.913768
+    "insurance": ""
   },
   {
     "id": 167,
@@ -2333,9 +2201,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.43416,
-    "lng": -84.173402
+    "insurance": ""
   },
   {
     "id": 168,
@@ -2347,9 +2213,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.843611,
-    "lng": -83.632726
+    "insurance": ""
   },
   {
     "id": 169,
@@ -2361,9 +2225,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.945936,
-    "lng": -84.353544
+    "insurance": ""
   },
   {
     "id": 170,
@@ -2375,9 +2237,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.994479,
-    "lng": -83.722631
+    "insurance": ""
   },
   {
     "id": 171,
@@ -2389,9 +2249,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.11701,
-    "lng": -84.200926
+    "insurance": ""
   },
   {
     "id": 172,
@@ -2403,9 +2261,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.678266,
-    "lng": -84.001107
+    "insurance": ""
   },
   {
     "id": 173,
@@ -2417,9 +2273,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.774164,
-    "lng": -84.249119
+    "insurance": ""
   },
   {
     "id": 174,
@@ -2431,9 +2285,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.626004,
-    "lng": -84.458711
+    "insurance": ""
   },
   {
     "id": 175,
@@ -2445,9 +2297,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.969507,
-    "lng": -84.26196
+    "insurance": ""
   },
   {
     "id": 176,
@@ -2459,9 +2309,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.052861,
-    "lng": -84.069152
+    "insurance": ""
   },
   {
     "id": 177,
@@ -2473,9 +2321,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.784773,
-    "lng": -84.389909
+    "insurance": ""
   },
   {
     "id": 178,
@@ -2487,9 +2333,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.80418,
-    "lng": -84.19446
+    "insurance": ""
   },
   {
     "id": 179,
@@ -2501,9 +2345,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.578235,
-    "lng": -84.383422
+    "insurance": ""
   },
   {
     "id": 180,
@@ -2515,9 +2357,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.340908,
-    "lng": -84.291148
+    "insurance": ""
   },
   {
     "id": 181,
@@ -2529,9 +2369,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.973255,
-    "lng": -84.54248
+    "insurance": ""
   },
   {
     "id": 182,
@@ -2543,9 +2381,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.042467,
-    "lng": -84.603057
+    "insurance": ""
   },
   {
     "id": 183,
@@ -2557,9 +2393,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.144825,
-    "lng": -83.955543
+    "insurance": ""
   },
   {
     "id": 184,
@@ -2571,9 +2405,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.818421,
-    "lng": -84.554912
+    "insurance": ""
   },
   {
     "id": 185,
@@ -2585,9 +2417,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.918084,
-    "lng": -84.465232
+    "insurance": ""
   },
   {
     "id": 186,
@@ -2599,9 +2429,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.533193,
-    "lng": -84.908086
+    "insurance": ""
   },
   {
     "id": 187,
@@ -2613,9 +2441,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.843611,
-    "lng": -83.632726
+    "insurance": ""
   },
   {
     "id": 188,
@@ -2627,9 +2453,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.236533,
-    "lng": -84.265442
+    "insurance": ""
   },
   {
     "id": 189,
@@ -2641,9 +2465,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.723734,
-    "lng": -84.764181
+    "insurance": ""
   },
   {
     "id": 190,
@@ -2655,9 +2477,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.267097,
-    "lng": -85.199756
+    "insurance": ""
   },
   {
     "id": 191,
@@ -2669,9 +2489,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.919979,
-    "lng": -84.21136
+    "insurance": ""
   },
   {
     "id": 192,
@@ -2683,9 +2501,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.969529,
-    "lng": -84.022999
+    "insurance": ""
   },
   {
     "id": 193,
@@ -2697,9 +2513,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.84317,
-    "lng": -84.059461
+    "insurance": ""
   },
   {
     "id": 194,
@@ -2711,9 +2525,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.72186,
-    "lng": -84.509275
+    "insurance": ""
   },
   {
     "id": 195,
@@ -2725,9 +2537,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.614677,
-    "lng": -83.683062
+    "insurance": ""
   },
   {
     "id": 196,
@@ -2739,9 +2549,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.375653,
-    "lng": -84.751005
+    "insurance": ""
   },
   {
     "id": 197,
@@ -2753,9 +2561,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.614064,
-    "lng": -84.445602
+    "insurance": ""
   },
   {
     "id": 198,
@@ -2767,9 +2573,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.745537,
-    "lng": -84.697289
+    "insurance": ""
   },
   {
     "id": 199,
@@ -2781,9 +2585,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.410408,
-    "lng": -84.564144
+    "insurance": ""
   },
   {
     "id": 200,
@@ -2795,9 +2597,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.068344,
-    "lng": -81.093231
+    "insurance": ""
   },
   {
     "id": 201,
@@ -2809,9 +2609,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.916105,
-    "lng": -84.766734
+    "insurance": ""
   },
   {
     "id": 202,
@@ -2823,9 +2621,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.848363,
-    "lng": -83.920041
+    "insurance": ""
   },
   {
     "id": 203,
@@ -2837,9 +2633,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.947439,
-    "lng": -83.417487
+    "insurance": ""
   },
   {
     "id": 204,
@@ -2851,9 +2645,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.738047,
-    "lng": -84.422585
+    "insurance": ""
   },
   {
     "id": 205,
@@ -2865,9 +2657,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.699131,
-    "lng": -84.448951
+    "insurance": ""
   },
   {
     "id": 206,
@@ -2879,9 +2669,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.916105,
-    "lng": -84.766734
+    "insurance": ""
   },
   {
     "id": 207,
@@ -2893,9 +2681,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.941688,
-    "lng": -84.081748
+    "insurance": ""
   },
   {
     "id": 208,
@@ -2907,9 +2693,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.048859,
-    "lng": -84.59735
+    "insurance": ""
   },
   {
     "id": 209,
@@ -2921,9 +2705,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 31.453845,
-    "lng": -83.527691
+    "insurance": ""
   },
   {
     "id": 210,
@@ -2935,9 +2717,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 31.513056,
-    "lng": -82.866708
+    "insurance": ""
   },
   {
     "id": 211,
@@ -2949,9 +2729,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 30.869808,
-    "lng": -83.292597
+    "insurance": ""
   },
   {
     "id": 212,
@@ -2963,9 +2741,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.656404,
-    "lng": -84.02083
+    "insurance": ""
   },
   {
     "id": 213,
@@ -2977,9 +2753,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.913694,
-    "lng": -84.382604
+    "insurance": ""
   },
   {
     "id": 214,
@@ -2991,9 +2765,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.930076,
-    "lng": -84.509201
+    "insurance": ""
   },
   {
     "id": 215,
@@ -3005,9 +2777,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.840605,
-    "lng": -84.519591
+    "insurance": ""
   },
   {
     "id": 216,
@@ -3019,9 +2789,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.066772,
-    "lng": -84.166383
+    "insurance": ""
   },
   {
     "id": 217,
@@ -3033,9 +2801,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.661884,
-    "lng": -84.447177
+    "insurance": ""
   },
   {
     "id": 218,
@@ -3047,9 +2813,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.96002,
-    "lng": -84.247096
+    "insurance": ""
   },
   {
     "id": 219,
@@ -3061,9 +2825,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.08867,
-    "lng": -84.485727
+    "insurance": ""
   },
   {
     "id": 220,
@@ -3075,9 +2837,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.942011,
-    "lng": -84.159748
+    "insurance": ""
   },
   {
     "id": 221,
@@ -3089,9 +2849,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.61058,
-    "lng": -84.347379
+    "insurance": ""
   },
   {
     "id": 222,
@@ -3103,9 +2861,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.869449,
-    "lng": -84.380578
+    "insurance": ""
   },
   {
     "id": 223,
@@ -3117,9 +2873,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.008363,
-    "lng": -84.564299
+    "insurance": ""
   },
   {
     "id": 224,
@@ -3131,9 +2885,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.773154,
-    "lng": -84.373765
+    "insurance": ""
   },
   {
     "id": 225,
@@ -3145,9 +2897,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.90612,
-    "lng": -84.473848
+    "insurance": ""
   },
   {
     "id": 226,
@@ -3159,9 +2909,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.920066,
-    "lng": -84.362345
+    "insurance": ""
   },
   {
     "id": 227,
@@ -3173,9 +2921,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.469342,
-    "lng": -84.431066
+    "insurance": ""
   },
   {
     "id": 228,
@@ -3187,9 +2933,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.947454,
-    "lng": -84.229076
+    "insurance": ""
   },
   {
     "id": 229,
@@ -3201,9 +2945,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.11125,
-    "lng": -84.056
+    "insurance": ""
   },
   {
     "id": 230,
@@ -3215,9 +2957,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.08823,
-    "lng": -83.989059
+    "insurance": ""
   },
   {
     "id": 231,
@@ -3229,9 +2969,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.708768,
-    "lng": -84.175138
+    "insurance": ""
   },
   {
     "id": 232,
@@ -3243,9 +2981,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.067193,
-    "lng": -84.316568
+    "insurance": ""
   },
   {
     "id": 233,
@@ -3257,9 +2993,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.771222,
-    "lng": -84.382536
+    "insurance": ""
   },
   {
     "id": 234,
@@ -3271,9 +3005,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.738357,
-    "lng": -84.435669
+    "insurance": ""
   },
   {
     "id": 235,
@@ -3285,9 +3017,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.584648,
-    "lng": -85.059021
+    "insurance": ""
   },
   {
     "id": 236,
@@ -3299,9 +3029,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.50104,
-    "lng": -84.960582
+    "insurance": ""
   },
   {
     "id": 237,
@@ -3313,9 +3041,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.631665,
-    "lng": -83.976932
+    "insurance": ""
   },
   {
     "id": 238,
@@ -3327,9 +3053,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.774527,
-    "lng": -84.249869
+    "insurance": ""
   },
   {
     "id": 239,
@@ -3341,9 +3065,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.705403,
-    "lng": -84.275432
+    "insurance": ""
   },
   {
     "id": 240,
@@ -3355,9 +3077,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.753435,
-    "lng": -84.731811
+    "insurance": ""
   },
   {
     "id": 241,
@@ -3369,9 +3089,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.678147,
-    "lng": -84.443438
+    "insurance": ""
   },
   {
     "id": 242,
@@ -3383,9 +3101,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.304438,
-    "lng": -83.960551
+    "insurance": ""
   },
   {
     "id": 243,
@@ -3397,9 +3113,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.557849,
-    "lng": -84.370328
+    "insurance": ""
   },
   {
     "id": 244,
@@ -3411,9 +3125,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.723617,
-    "lng": -84.164363
+    "insurance": ""
   },
   {
     "id": 245,
@@ -3425,9 +3137,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.922981,
-    "lng": -84.466686
+    "insurance": ""
   },
   {
     "id": 246,
@@ -3439,9 +3149,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.435335,
-    "lng": -84.173587
+    "insurance": ""
   },
   {
     "id": 247,
@@ -3453,9 +3161,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.560626,
-    "lng": -84.346152
+    "insurance": ""
   },
   {
     "id": 248,
@@ -3467,9 +3173,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.577868,
-    "lng": -84.38766
+    "insurance": ""
   },
   {
     "id": 249,
@@ -3481,9 +3185,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.267097,
-    "lng": -85.199756
+    "insurance": ""
   },
   {
     "id": 250,
@@ -3495,9 +3197,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.836388,
-    "lng": -84.068121
+    "insurance": ""
   },
   {
     "id": 251,
@@ -3509,9 +3209,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.814538,
-    "lng": -83.69231
+    "insurance": ""
   },
   {
     "id": 252,
@@ -3523,9 +3221,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.019981,
-    "lng": -84.314306
+    "insurance": ""
   },
   {
     "id": 253,
@@ -3537,9 +3233,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.001851,
-    "lng": -81.110057
+    "insurance": ""
   },
   {
     "id": 254,
@@ -3551,9 +3245,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.891664,
-    "lng": -84.380801
+    "insurance": ""
   },
   {
     "id": 255,
@@ -3565,9 +3257,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.880741,
-    "lng": -84.290507
+    "insurance": ""
   },
   {
     "id": 256,
@@ -3579,9 +3269,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.815398,
-    "lng": -84.590421
+    "insurance": ""
   },
   {
     "id": 257,
@@ -3593,9 +3281,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.573668,
-    "lng": -84.370142
+    "insurance": ""
   },
   {
     "id": 258,
@@ -3607,9 +3293,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.106694,
-    "lng": -84.029188
+    "insurance": ""
   },
   {
     "id": 259,
@@ -3621,9 +3305,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.650784,
-    "lng": -84.002079
+    "insurance": ""
   },
   {
     "id": 260,
@@ -3635,9 +3317,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.086867,
-    "lng": -84.575462
+    "insurance": ""
   },
   {
     "id": 261,
@@ -3649,9 +3329,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.259803,
-    "lng": -85.172778
+    "insurance": ""
   },
   {
     "id": 262,
@@ -3663,9 +3341,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.164732,
-    "lng": -84.791944
+    "insurance": ""
   },
   {
     "id": 263,
@@ -3677,9 +3353,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.207715,
-    "lng": -84.506354
+    "insurance": ""
   },
   {
     "id": 264,
@@ -3691,9 +3365,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.91466,
-    "lng": -84.360329
+    "insurance": ""
   },
   {
     "id": 265,
@@ -3705,9 +3377,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.039734,
-    "lng": -84.340535
+    "insurance": ""
   },
   {
     "id": 266,
@@ -3719,9 +3389,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.904911,
-    "lng": -84.485661
+    "insurance": ""
   },
   {
     "id": 267,
@@ -3733,9 +3401,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.928975,
-    "lng": -84.359295
+    "insurance": ""
   },
   {
     "id": 268,
@@ -3747,9 +3413,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.820162,
-    "lng": -84.453653
+    "insurance": ""
   },
   {
     "id": 269,
@@ -3761,9 +3425,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.578512,
-    "lng": -84.344331
+    "insurance": ""
   },
   {
     "id": 270,
@@ -3775,9 +3437,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.566077,
-    "lng": -84.537013
+    "insurance": ""
   },
   {
     "id": 271,
@@ -3789,9 +3449,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.613168,
-    "lng": -83.698477
+    "insurance": ""
   },
   {
     "id": 272,
@@ -3803,9 +3461,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.446842,
-    "lng": -84.477003
+    "insurance": ""
   },
   {
     "id": 273,
@@ -3817,9 +3473,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.247589,
-    "lng": -84.278675
+    "insurance": ""
   },
   {
     "id": 274,
@@ -3831,9 +3485,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.573625,
-    "lng": -84.36778
+    "insurance": ""
   },
   {
     "id": 275,
@@ -3845,9 +3497,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.398594,
-    "lng": -84.726228
+    "insurance": ""
   },
   {
     "id": 276,
@@ -3859,9 +3509,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.959583,
-    "lng": -84.006849
+    "insurance": ""
   },
   {
     "id": 277,
@@ -3873,9 +3521,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.648663,
-    "lng": -84.465691
+    "insurance": ""
   },
   {
     "id": 278,
@@ -3887,9 +3533,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.970094,
-    "lng": -83.409354
+    "insurance": ""
   },
   {
     "id": 279,
@@ -3901,9 +3545,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 31.822995,
-    "lng": -81.630258
+    "insurance": ""
   },
   {
     "id": 280,
@@ -3915,9 +3557,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.103894,
-    "lng": -81.146659
+    "insurance": ""
   },
   {
     "id": 281,
@@ -3929,9 +3569,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.003643,
-    "lng": -81.111831
+    "insurance": ""
   },
   {
     "id": 282,
@@ -3943,9 +3581,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 31.19478,
-    "lng": -81.479746
+    "insurance": ""
   },
   {
     "id": 283,
@@ -3957,9 +3593,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.512968,
-    "lng": -82.054438
+    "insurance": ""
   },
   {
     "id": 284,
@@ -3971,9 +3605,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.176822,
-    "lng": -84.549779
+    "insurance": ""
   },
   {
     "id": 285,
@@ -3985,9 +3617,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.13752,
-    "lng": -84.172591
+    "insurance": ""
   },
   {
     "id": 286,
@@ -3999,9 +3629,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.297233,
-    "lng": -83.84497
+    "insurance": ""
   },
   {
     "id": 287,
@@ -4013,9 +3641,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.989162,
-    "lng": -83.719199
+    "insurance": ""
   },
   {
     "id": 288,
@@ -4027,9 +3653,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 31.208148,
-    "lng": -83.251161
+    "insurance": ""
   },
   {
     "id": 289,
@@ -4041,9 +3665,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 31.506114,
-    "lng": -82.861085
+    "insurance": ""
   },
   {
     "id": 290,
@@ -4055,9 +3677,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 31.604704,
-    "lng": -81.901732
+    "insurance": ""
   },
   {
     "id": 291,
@@ -4069,9 +3689,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 31.221129,
-    "lng": -82.351301
+    "insurance": ""
   },
   {
     "id": 292,
@@ -4083,9 +3701,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.022319,
-    "lng": -84.145511
+    "insurance": ""
   },
   {
     "id": 293,
@@ -4097,9 +3713,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.545828,
-    "lng": -82.934854
+    "insurance": ""
   },
   {
     "id": 294,
@@ -4111,9 +3725,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.65698,
-    "lng": -84.025577
+    "insurance": ""
   },
   {
     "id": 295,
@@ -4125,9 +3737,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 31.583747,
-    "lng": -84.180266
+    "insurance": ""
   },
   {
     "id": 296,
@@ -4139,9 +3749,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.855572,
-    "lng": -84.210047
+    "insurance": ""
   },
   {
     "id": 297,
@@ -4153,9 +3761,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.745069,
-    "lng": -84.357005
+    "insurance": ""
   },
   {
     "id": 298,
@@ -4167,9 +3773,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.999332,
-    "lng": -84.145686
+    "insurance": ""
   },
   {
     "id": 299,
@@ -4181,9 +3785,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.236533,
-    "lng": -84.265442
+    "insurance": ""
   },
   {
     "id": 300,
@@ -4195,9 +3797,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.903355,
-    "lng": -84.35247
+    "insurance": ""
   },
   {
     "id": 301,
@@ -4209,9 +3809,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.920139,
-    "lng": -84.37827
+    "insurance": ""
   },
   {
     "id": 302,
@@ -4223,9 +3821,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.57262,
-    "lng": -84.354238
+    "insurance": ""
   },
   {
     "id": 303,
@@ -4237,9 +3833,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.631558,
-    "lng": -84.015078
+    "insurance": ""
   },
   {
     "id": 304,
@@ -4251,9 +3845,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.43416,
-    "lng": -84.173402
+    "insurance": ""
   },
   {
     "id": 305,
@@ -4265,9 +3857,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.206213,
-    "lng": -84.132892
+    "insurance": ""
   },
   {
     "id": 306,
@@ -4279,9 +3869,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.194916,
-    "lng": -84.448889
+    "insurance": ""
   },
   {
     "id": 307,
@@ -4293,9 +3881,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.250052,
-    "lng": -84.091678
+    "insurance": ""
   },
   {
     "id": 308,
@@ -4307,9 +3893,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.478243,
-    "lng": -84.936921
+    "insurance": ""
   },
   {
     "id": 309,
@@ -4321,9 +3905,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.02736,
-    "lng": -84.742563
+    "insurance": ""
   },
   {
     "id": 310,
@@ -4335,9 +3917,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.90049,
-    "lng": -84.277076
+    "insurance": ""
   },
   {
     "id": 311,
@@ -4349,9 +3929,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.795725,
-    "lng": -84.4073
+    "insurance": ""
   },
   {
     "id": 312,
@@ -4363,9 +3941,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.897369,
-    "lng": -84.302962
+    "insurance": ""
   },
   {
     "id": 313,
@@ -4377,9 +3953,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.653664,
-    "lng": -84.450291
+    "insurance": ""
   },
   {
     "id": 314,
@@ -4391,9 +3965,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.678046,
-    "lng": -84.004756
+    "insurance": ""
   },
   {
     "id": 315,
@@ -4405,9 +3977,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.790004,
-    "lng": -84.287601
+    "insurance": ""
   },
   {
     "id": 316,
@@ -4419,9 +3989,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.825825,
-    "lng": -84.290076
+    "insurance": ""
   },
   {
     "id": 317,
@@ -4433,9 +4001,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.956939,
-    "lng": -84.134708
+    "insurance": ""
   },
   {
     "id": 318,
@@ -4447,9 +4013,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.985523,
-    "lng": -84.429243
+    "insurance": ""
   },
   {
     "id": 319,
@@ -4461,9 +4025,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.299296,
-    "lng": -83.859605
+    "insurance": ""
   },
   {
     "id": 320,
@@ -4475,9 +4037,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.999262,
-    "lng": -84.586384
+    "insurance": ""
   },
   {
     "id": 321,
@@ -4489,9 +4049,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.413359,
-    "lng": -84.20214
+    "insurance": ""
   },
   {
     "id": 322,
@@ -4503,9 +4061,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.019981,
-    "lng": -84.314306
+    "insurance": ""
   },
   {
     "id": 323,
@@ -4517,9 +4073,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.853935,
-    "lng": -84.031055
+    "insurance": ""
   },
   {
     "id": 324,
@@ -4531,9 +4085,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.511643,
-    "lng": -84.224434
+    "insurance": ""
   },
   {
     "id": 325,
@@ -4545,9 +4097,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.823573,
-    "lng": -84.123758
+    "insurance": ""
   },
   {
     "id": 326,
@@ -4559,9 +4109,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.823246,
-    "lng": -84.251512
+    "insurance": ""
   },
   {
     "id": 327,
@@ -4573,9 +4121,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "Russian",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.130177,
-    "lng": -84.499581
+    "insurance": ""
   },
   {
     "id": 328,
@@ -4587,9 +4133,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.538902,
-    "lng": -82.939108
+    "insurance": ""
   },
   {
     "id": 329,
@@ -4601,9 +4145,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.789538,
-    "lng": -84.306033
+    "insurance": ""
   },
   {
     "id": 330,
@@ -4615,9 +4157,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.924665,
-    "lng": -83.732783
+    "insurance": ""
   },
   {
     "id": 331,
@@ -4629,9 +4169,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.045294,
-    "lng": -81.071046
+    "insurance": ""
   },
   {
     "id": 332,
@@ -4643,9 +4181,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.50701,
-    "lng": -84.237502
+    "insurance": ""
   },
   {
     "id": 333,
@@ -4657,9 +4193,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.922292,
-    "lng": -83.441617
+    "insurance": ""
   },
   {
     "id": 334,
@@ -4671,9 +4205,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.217527,
-    "lng": -83.468857
+    "insurance": ""
   },
   {
     "id": 335,
@@ -4685,9 +4217,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 34.098658,
-    "lng": -84.017915
+    "insurance": ""
   },
   {
     "id": 336,
@@ -4699,9 +4229,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 32.538902,
-    "lng": -82.939108
+    "insurance": ""
   },
   {
     "id": 337,
@@ -4713,9 +4241,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.96402,
-    "lng": -84.254906
+    "insurance": ""
   },
   {
     "id": 338,
@@ -4727,9 +4253,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.124862,
-    "lng": -84.328858
+    "insurance": ""
   },
   {
     "id": 339,
@@ -4741,9 +4265,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.820162,
-    "lng": -84.453653
+    "insurance": ""
   },
   {
     "id": 340,
@@ -4755,9 +4277,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.968352,
-    "lng": -84.010593
+    "insurance": ""
   },
   {
     "id": 341,
@@ -4769,9 +4289,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.945936,
-    "lng": -84.353544
+    "insurance": ""
   },
   {
     "id": 342,
@@ -4783,9 +4301,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.959583,
-    "lng": -84.006849
+    "insurance": ""
   },
   {
     "id": 343,
@@ -4797,9 +4313,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.648663,
-    "lng": -84.465691
+    "insurance": ""
   },
   {
     "id": 344,
@@ -4811,9 +4325,7 @@
     "hours": "Monday-Sunday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.970094,
-    "lng": -83.409354
+    "insurance": ""
   },
   {
     "id": 345,
@@ -4825,9 +4337,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 2,
-    "insurance": "",
-    "lat": 31.822995,
-    "lng": -81.630258
+    "insurance": ""
   },
   {
     "id": 346,
@@ -4839,9 +4349,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 32.103894,
-    "lng": -81.146659
+    "insurance": ""
   },
   {
     "id": 347,
@@ -4853,9 +4361,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 32.003643,
-    "lng": -81.111831
+    "insurance": ""
   },
   {
     "id": 348,
@@ -4867,9 +4373,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 31.19478,
-    "lng": -81.479746
+    "insurance": ""
   },
   {
     "id": 349,
@@ -4881,9 +4385,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 33.523299,
-    "lng": -82.122861
+    "insurance": ""
   },
   {
     "id": 350,
@@ -4895,9 +4397,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.990728,
-    "lng": -84.035064
+    "insurance": ""
   },
   {
     "id": 351,
@@ -4909,9 +4409,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 33.961735,
-    "lng": -80.422384
+    "insurance": ""
   },
   {
     "id": 352,
@@ -4923,9 +4421,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": 34.331993,
-    "lng": -85.170702
+    "insurance": ""
   },
   {
     "id": 353,
@@ -4937,9 +4433,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 33.942522,
-    "lng": -83.750108
+    "insurance": ""
   },
   {
     "id": 354,
@@ -4951,9 +4445,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": 34.168195,
-    "lng": -84.123868
+    "insurance": ""
   },
   {
     "id": 355,
@@ -4965,9 +4457,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "Russian",
     "rating": 1,
-    "insurance": "",
-    "lat": null,
-    "lng": null
+    "insurance": ""
   },
   {
     "id": 356,
@@ -4979,9 +4469,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 2,
-    "insurance": "",
-    "lat": null,
-    "lng": null
+    "insurance": ""
   },
   {
     "id": 357,
@@ -4993,9 +4481,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 3,
-    "insurance": "",
-    "lat": null,
-    "lng": null
+    "insurance": ""
   },
   {
     "id": 358,
@@ -5007,9 +4493,7 @@
     "hours": "Monday-Friday 9AM-5PM",
     "language": "English",
     "rating": 1,
-    "insurance": "",
-    "lat": 52.16706,
-    "lng": -10.329016
+    "insurance": ""
   },
   {
     "id": 359,
@@ -5021,9 +4505,7 @@
     "hours": "",
     "language": "English",
     "rating": null,
-    "insurance": "",
-    "lat": null,
-    "lng": null
+    "insurance": ""
   },
   {
     "id": 360,
@@ -5035,8 +4517,6 @@
     "hours": "",
     "language": "English",
     "rating": null,
-    "insurance": "",
-    "lat": null,
-    "lng": null
+    "insurance": ""
   }
 ]

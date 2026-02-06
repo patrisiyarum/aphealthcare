@@ -1,6 +1,6 @@
 /* ============================================
-   AP Healthcare — App Styles
-   Brand: Green #2E7D32 / Dark #2D2D2D
+   AP Healthcare — Facility Finder
+   Matches aphealthcare.org brand style
    ============================================ */
 
 /* --- Layout --- */
@@ -11,54 +11,130 @@
 }
 
 .container {
-  max-width: 900px;
+  max-width: 960px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-.main {
-  flex: 1;
-  padding: 2.5rem 0 3rem;
-  background: #f6f7f6;
-}
-
 /* ============================================
-   HEADER — white background, logo only
+   TOP NAV — matches aphealthcare.org header
    ============================================ */
-.header {
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
+.topnav {
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.header-inner {
-  max-width: 900px;
+.topnav-inner {
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 1.5rem 1.5rem 1.25rem;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  height: 70px;
+  gap: 2rem;
 }
 
-.header-logo {
-  height: 80px;
+.topnav-logo-link {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.topnav-logo {
+  height: 46px;
   width: auto;
   object-fit: contain;
 }
 
-.header-bar {
-  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 60%, #43a047 100%);
-  color: #fff;
+.topnav-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex: 1;
 }
 
-.header-bar-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0.7rem 1.5rem;
-  font-size: 0.92rem;
+.topnav-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 0.88rem;
   font-weight: 500;
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+.topnav-links a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.topnav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.topnav-phone {
+  color: #4ade80;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+
+.topnav-phone:hover {
+  color: #86efac;
+}
+
+.topnav-phone svg {
+  color: #4ade80;
+}
+
+/* ============================================
+   HERO — green banner like aphealthcare.org
+   ============================================ */
+.hero {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #388e3c 100%);
+  color: #fff;
   text-align: center;
-  letter-spacing: 0.2px;
+  padding: 3rem 1.5rem;
+}
+
+.hero-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  opacity: 0.92;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* ============================================
+   MAIN CONTENT
+   ============================================ */
+.main {
+  flex: 1;
+  padding: 2.5rem 0 3rem;
+  background: #f7f8f7;
 }
 
 /* ============================================
@@ -66,31 +142,29 @@
    ============================================ */
 .search-form {
   background: #fff;
-  border-radius: 16px;
-  padding: 2rem 2rem 1.75rem;
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
-  margin-bottom: 1.75rem;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
 }
 
 .form-title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
 }
 
 .form-subtitle {
   color: #6b7280;
   font-size: 0.88rem;
   margin-bottom: 1.5rem;
-  line-height: 1.5;
 }
 
 .form-fields {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.1rem;
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -101,32 +175,32 @@
 }
 
 .field-label {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: #374151;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
 .field-label svg {
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   color: #2e7d32;
 }
 
 .field-input,
 .field-select {
   width: 100%;
-  padding: 0.72rem 0.9rem;
+  padding: 0.7rem 0.85rem;
   border: 1.5px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 0.95rem;
+  border-radius: 6px;
+  font-size: 0.92rem;
   color: #1a1a1a;
   background: #fff;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.15s, box-shadow 0.15s;
   appearance: none;
   -webkit-appearance: none;
 }
@@ -145,7 +219,7 @@
 .field-select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%236b7280'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 0.7rem center;
+  background-position: right 0.65rem center;
   background-size: 18px;
   padding-right: 2.25rem;
 }
@@ -153,29 +227,28 @@
 .filters-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.9rem;
+  gap: 0.85rem;
 }
 
 .btn-search {
   width: 100%;
-  padding: 0.85rem;
+  padding: 0.8rem;
   background: #2e7d32;
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 0.95rem;
   font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  transition: all 0.2s;
+  gap: 0.45rem;
+  transition: background 0.2s;
 }
 
 .btn-search:hover:not(:disabled) {
   background: #1b5e20;
-  box-shadow: 0 4px 14px rgba(46, 125, 50, 0.3);
 }
 
 .btn-search:disabled {
@@ -197,19 +270,18 @@
 }
 
 /* ============================================
-   LOADING / ERROR / EMPTY
+   STATUS / ERROR / EMPTY
    ============================================ */
-.loading-card {
+.status-card {
   background: #fff;
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 2.5rem 2rem;
   text-align: center;
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
-  margin-bottom: 1.75rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
 }
 
-.loading-spinner {
+.spinner {
   width: 40px;
   height: 40px;
   border: 4px solid #e5e7eb;
@@ -219,14 +291,13 @@
   margin: 0 auto 1rem;
 }
 
-.loading-text {
-  font-size: 1rem;
+.status-text {
   font-weight: 600;
   color: #1a1a1a;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
-.loading-sub {
+.status-sub {
   font-size: 0.85rem;
   color: #6b7280;
 }
@@ -237,36 +308,26 @@
   gap: 0.75rem;
   background: #fef2f2;
   border: 1px solid #fecaca;
-  border-left: 4px solid #dc2626;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 1rem 1.25rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 2rem;
 }
 
-.error-icon-wrap {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: #dc2626;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 0.85rem;
+.error-card svg {
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .error-title {
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: #991b1b;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.1rem;
 }
 
 .error-text {
   color: #b91c1c;
-  font-size: 0.88rem;
+  font-size: 0.87rem;
 }
 
 .empty-card {
@@ -274,8 +335,8 @@
   padding: 2rem;
   color: #6b7280;
   background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
 }
 
 /* ============================================
@@ -283,11 +344,10 @@
    ============================================ */
 .map-section {
   background: #fff;
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 1.25rem;
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
-  margin-bottom: 1.75rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
 }
 
 .map-section-title {
@@ -301,7 +361,7 @@
 }
 
 .map-wrap {
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   border: 1px solid #e5e7eb;
 }
@@ -329,21 +389,20 @@
 }
 
 .results-count {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: #6b7280;
   background: #f3f4f6;
-  padding: 0.25rem 0.65rem;
-  border-radius: 20px;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
   font-weight: 500;
 }
 
 .results-disclaimer {
   background: #fffbeb;
   border: 1px solid #fde68a;
-  border-left: 4px solid #f59e0b;
-  border-radius: 8px;
-  padding: 0.65rem 0.9rem;
-  font-size: 0.8rem;
+  border-radius: 6px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.78rem;
   color: #92400e;
   margin-bottom: 1rem;
   line-height: 1.5;
@@ -352,7 +411,7 @@
 .results-cards {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.85rem;
 }
 
 /* ============================================
@@ -360,15 +419,15 @@
    ============================================ */
 .fcard {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
   border: 1px solid #e5e7eb;
   overflow: hidden;
-  transition: box-shadow 0.2s, transform 0.15s;
+  transition: box-shadow 0.15s, transform 0.1s;
 }
 
 .fcard:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   transform: translateY(-1px);
 }
 
@@ -379,21 +438,21 @@
 .fcard-top {
   display: flex;
   align-items: flex-start;
-  gap: 0.7rem;
-  padding: 1.1rem 1.25rem 0;
+  gap: 0.65rem;
+  padding: 1rem 1.25rem 0;
 }
 
 .fcard-rank {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
   background: #2e7d32;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   flex-shrink: 0;
 }
 
@@ -403,24 +462,24 @@
 }
 
 .fcard-name {
-  font-size: 1.02rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #1a1a1a;
   line-height: 1.3;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .fcard-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.3rem;
 }
 
 .badge {
   display: inline-block;
-  padding: 0.12rem 0.55rem;
-  border-radius: 4px;
-  font-size: 0.68rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.67rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -437,45 +496,43 @@
 }
 
 .fcard-body {
-  padding: 0.85rem 1.25rem 1.1rem;
+  padding: 0.75rem 1.25rem 1rem;
 }
 
-/* Distance banner */
 .fcard-distance {
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.6rem 0.85rem;
+  padding: 0.55rem 0.8rem;
   background: #f0faf0;
-  border-radius: 8px;
-  margin-bottom: 0.85rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
   border: 1px solid #d4edda;
 }
 
 .fcard-miles {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: #1b5e20;
 }
 
 .fcard-duration {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: #4a7c4f;
   font-weight: 500;
 }
 
-/* Details */
 .fcard-details {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.45rem;
-  margin-bottom: 0.85rem;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
 }
 
 .fcard-row {
   display: flex;
   gap: 0.6rem;
-  font-size: 0.87rem;
+  font-size: 0.85rem;
   line-height: 1.45;
 }
 
@@ -483,7 +540,7 @@
   font-weight: 600;
   color: #6b7280;
   white-space: nowrap;
-  min-width: 85px;
+  min-width: 80px;
   flex-shrink: 0;
 }
 
@@ -492,11 +549,10 @@
   word-break: break-word;
 }
 
-/* Rating */
 .rating-wrap {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.3rem;
 }
 
 .rating-num {
@@ -504,66 +560,52 @@
   color: #1a1a1a;
 }
 
-.stars {
-  display: inline-flex;
-  gap: 1px;
-}
-
-.star-on {
-  color: #f59e0b;
-  font-size: 0.95rem;
-}
-
-.star-off {
-  color: #d1d5db;
-  font-size: 0.95rem;
-}
+.stars { display: inline-flex; gap: 1px; }
+.star-on { color: #f59e0b; font-size: 0.9rem; }
+.star-off { color: #d1d5db; font-size: 0.9rem; }
 
 .rating-na {
   color: #9ca3af;
   font-style: italic;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
 }
 
-/* Directions button */
 .fcard-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .btn-directions {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.55rem 1rem;
+  padding: 0.5rem 1rem;
   background: #2e7d32;
   color: #fff;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 0.85rem;
+  border-radius: 6px;
+  font-size: 0.84rem;
   font-weight: 600;
-  transition: all 0.2s;
+  transition: background 0.15s;
 }
 
 .btn-directions:hover {
   background: #1b5e20;
-  box-shadow: 0 3px 10px rgba(46, 125, 50, 0.25);
 }
 
 .btn-directions svg {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 
-/* Virtual */
 .virtual-banner {
   margin-top: 0.6rem;
-  padding: 0.55rem 0.85rem;
+  padding: 0.5rem 0.75rem;
   background: #f0faf0;
   color: #2e7d32;
-  border-radius: 8px;
-  font-size: 0.84rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -571,50 +613,152 @@
 }
 
 /* ============================================
-   FOOTER
+   FOOTER — matches aphealthcare.org
    ============================================ */
-.footer {
-  background: #2d2d2d;
-  color: #9ca3af;
-  text-align: center;
-  padding: 1.75rem 1.5rem;
-  font-size: 0.82rem;
-  line-height: 1.6;
+.site-footer {
+  background: #1a1a1a;
+  color: #d1d5db;
   margin-top: auto;
 }
 
-.footer-logo {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
-  margin-bottom: 0.6rem;
-  filter: brightness(0) invert(1);
-  opacity: 0.6;
+.footer-top {
+  border-bottom: 1px solid #333;
+  padding: 3rem 0;
 }
 
-.footer-sub {
-  margin-top: 0.4rem;
-  font-size: 0.75rem;
-  opacity: 0.6;
+.footer-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.footer-brand-text {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #9ca3af;
+  margin-bottom: 1.25rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-social a {
+  color: #6b7280;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.footer-social a:hover {
+  color: #4ade80;
+}
+
+.footer-heading {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.87rem;
+  transition: color 0.15s;
+}
+
+.footer-links a:hover {
+  color: #4ade80;
+}
+
+.footer-contact {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.87rem;
+  color: #9ca3af;
+}
+
+.footer-contact li svg {
+  color: #4ade80;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footer-contact a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-contact a:hover {
+  color: #4ade80;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.footer-disclaimer {
+  margin-top: 0.35rem;
+  font-size: 0.72rem;
+  opacity: 0.7;
 }
 
 /* ============================================
    RESPONSIVE
    ============================================ */
-@media (min-width: 640px) {
-  .filters-row {
-    grid-template-columns: 1fr 1fr 1fr;
+@media (max-width: 768px) {
+  .topnav-links {
+    display: none;
+  }
+  .topnav-inner {
+    justify-content: space-between;
+  }
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  .hero {
+    padding: 2rem 1.25rem;
+  }
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
 @media (max-width: 639px) {
-  .header-logo {
-    height: 60px;
-  }
-  .header-bar-inner {
-    font-size: 0.84rem;
-    padding: 0.6rem 1rem;
-  }
   .main {
     padding: 1.5rem 0 2rem;
   }
@@ -628,21 +772,21 @@
     grid-template-columns: 1fr;
   }
   .fcard-top {
-    padding: 0.85rem 1rem 0;
+    padding: 0.75rem 1rem 0;
   }
   .fcard-body {
-    padding: 0.65rem 1rem 0.85rem;
+    padding: 0.6rem 1rem 0.85rem;
   }
   .fcard-row {
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 0.08rem;
   }
   .fcard-label {
     min-width: auto;
   }
   .fcard-distance {
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.15rem;
     text-align: center;
   }
 }

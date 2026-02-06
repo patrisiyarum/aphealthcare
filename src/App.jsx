@@ -68,28 +68,6 @@ export default function App() {
     []
   );
 
-  const handleViewAll = useCallback(() => {
-    setError("");
-    setSearched(true);
-    setUserAddress("");
-    setUserLocation(null);
-    setCurrentPage(1);
-
-    const allWithCoords = facilitiesData
-      .filter((f) => f.lat != null && f.lng != null)
-      .map((f) => ({
-        ...f,
-        geocoded: { lat: f.lat, lng: f.lng },
-        drivingDistance: null,
-      }));
-
-    setAllFiltered(allWithCoords);
-    setResults({
-      facilities: allWithCoords.slice(0, PER_PAGE),
-      totalFiltered: allWithCoords.length,
-    });
-  }, []);
-
   const handlePageChange = useCallback(
     async (page) => {
       setCurrentPage(page);
@@ -231,7 +209,7 @@ export default function App() {
       {/* ===== MAIN ===== */}
       <main className="main">
         <div className="container">
-          <SearchForm onSearch={handleSearch} onViewAll={handleViewAll} isLoading={isLoading} />
+          <SearchForm onSearch={handleSearch} isLoading={isLoading} />
 
           {(isLoading || isLoadingPage) && (
             <div className="status-card">

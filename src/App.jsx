@@ -130,16 +130,10 @@ export default function App() {
         </div>
       </div>
 
-      {/* ===== HERO ===== */}
-      <section className="hero">
-        <div className="hero-inner">
-          <h1 className="hero-title">Provider Map</h1>
-        </div>
-      </section>
-
       {/* ===== MAIN ===== */}
       <main className="main">
         <div className="container">
+          <h1 className="page-title">Provider Map</h1>
           <SearchForm onSearch={handleSearch} isLoading={isLoading} />
 
           {isLoading && (

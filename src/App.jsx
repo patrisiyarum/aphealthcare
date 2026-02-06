@@ -215,9 +215,6 @@ export default function App() {
             <div className="status-card">
               <div className="spinner"></div>
               <p className="status-text">{loadingStatus}</p>
-              <p className="status-sub">
-                Computing real driving routes for the closest facilities...
-              </p>
             </div>
           )}
 

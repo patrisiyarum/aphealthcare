@@ -7,11 +7,11 @@ import {
   geocodeAddress,
   getDrivingDistance,
   haversineDistance,
-  geocodeFacility,
 } from "./utils/geocoding";
 import "./App.css";
 
-const MAX_DRIVING_CALC = 15;
+// Only compute driving distance for the N closest (by straight line)
+const MAX_DRIVING_CALC = 12;
 const MAX_RESULTS = 10;
 
 export default function App() {
@@ -33,7 +33,7 @@ export default function App() {
       setLoadingStatus("Locating your address...");
 
       try {
-        // Step 1: Geocode user address
+        // Step 1: Geocode ONLY the user's address (single request)
         const userGeo = await geocodeAddress(address);
         if (!userGeo) {
           setError(
@@ -43,23 +43,36 @@ export default function App() {
           return;
         }
         setUserLocation(userGeo);
-        setLoadingStatus("Filtering facilities...");
 
-        // Step 2: Filter facilities
-        let filtered = facilitiesData.filter((f) => {
-          const hasAddress =
-            f.address &&
-            !f.address.toLowerCase().includes("virtual") &&
-            f.address.trim().length > 10;
-          if (!hasAddress) return false;
-          if (category && f.category !== category) return false;
-          if (language && (!f.language || f.language !== language)) return false;
-          if (rating !== null && rating !== undefined && f.rating !== rating)
-            return false;
-          return true;
-        });
+        // Step 2: Filter facilities + use PRE-STORED lat/lng (no geocoding!)
+        setLoadingStatus("Finding nearest facilities...");
 
-        if (filtered.length === 0) {
+        const withDistance = facilitiesData
+          .filter((f) => {
+            // Must have a geocoded address
+            if (f.lat == null || f.lng == null) return false;
+            // Category filter
+            if (category && f.category !== category) return false;
+            // Language filter
+            if (language && (!f.language || f.language !== language))
+              return false;
+            // Rating filter
+            if (rating !== null && rating !== undefined && f.rating !== rating)
+              return false;
+            return true;
+          })
+          .map((f) => ({
+            ...f,
+            geocoded: { lat: f.lat, lng: f.lng },
+            straightLineDistance: haversineDistance(
+              userGeo.lat,
+              userGeo.lng,
+              f.lat,
+              f.lng
+            ),
+          }));
+
+        if (withDistance.length === 0) {
           setError(
             "No facilities match your selected filters. Try broadening your search criteria."
           );
@@ -67,50 +80,13 @@ export default function App() {
           return;
         }
 
-        setLoadingStatus(
-          `Found ${filtered.length} facilities. Calculating distances...`
-        );
-
-        // Step 3: Geocode facilities + straight-line distance
-        const geocodedFacilities = [];
-        for (let i = 0; i < filtered.length; i++) {
-          const facility = filtered[i];
-          const cached = sessionStorage.getItem(`geo_${facility.address}`);
-          let geo = cached ? JSON.parse(cached) : null;
-
-          if (!geo) {
-            geo = await geocodeFacility(facility.address);
-            await new Promise((r) => setTimeout(r, 200));
-          }
-
-          if (geo) {
-            const straightDist = haversineDistance(
-              userGeo.lat,
-              userGeo.lng,
-              geo.lat,
-              geo.lng
-            );
-            geocodedFacilities.push({
-              ...facility,
-              geocoded: geo,
-              straightLineDistance: straightDist,
-            });
-          } else {
-            geocodedFacilities.push({
-              ...facility,
-              geocoded: null,
-              straightLineDistance: Infinity,
-            });
-          }
-        }
-
-        // Step 4: Sort by straight-line distance
-        geocodedFacilities.sort(
+        // Step 3: Sort by straight-line distance (instant — no API calls)
+        withDistance.sort(
           (a, b) => a.straightLineDistance - b.straightLineDistance
         );
 
-        // Step 5: Driving distance for closest N
-        const closestN = geocodedFacilities.slice(0, MAX_DRIVING_CALC);
+        // Step 4: Compute actual driving distance for closest N only
+        const closestN = withDistance.slice(0, MAX_DRIVING_CALC);
         const withDriving = [];
 
         for (let i = 0; i < closestN.length; i++) {
@@ -118,21 +94,20 @@ export default function App() {
           setLoadingStatus(
             `Calculating driving route ${i + 1} of ${closestN.length}...`
           );
-          if (facility.geocoded) {
-            const driving = await getDrivingDistance(
-              userGeo.lat,
-              userGeo.lng,
-              facility.geocoded.lat,
-              facility.geocoded.lng
-            );
-            withDriving.push({ ...facility, drivingDistance: driving });
-            await new Promise((r) => setTimeout(r, 150));
-          } else {
-            withDriving.push(facility);
+          const driving = await getDrivingDistance(
+            userGeo.lat,
+            userGeo.lng,
+            facility.geocoded.lat,
+            facility.geocoded.lng
+          );
+          withDriving.push({ ...facility, drivingDistance: driving });
+          // Small delay between OSRM requests
+          if (i < closestN.length - 1) {
+            await new Promise((r) => setTimeout(r, 100));
           }
         }
 
-        // Step 6: Sort by driving distance
+        // Step 5: Final sort by driving distance
         withDriving.sort((a, b) => {
           const aDist = a.drivingDistance
             ? a.drivingDistance.distanceMeters
@@ -145,7 +120,7 @@ export default function App() {
 
         setResults({
           facilities: withDriving.slice(0, MAX_RESULTS),
-          totalFiltered: filtered.length,
+          totalFiltered: withDistance.length,
         });
       } catch (err) {
         console.error("Search error:", err);
@@ -188,7 +163,7 @@ export default function App() {
               <div className="loading-spinner"></div>
               <p className="loading-text">{loadingStatus}</p>
               <p className="loading-sub">
-                Computing real driving routes — this may take a moment.
+                Computing driving routes for the closest facilities...
               </p>
             </div>
           )}

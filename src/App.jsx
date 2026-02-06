@@ -63,7 +63,7 @@ export default function App() {
           .filter((f) => {
             if (f.lat == null || f.lng == null) return false;
             if (category && f.category !== category) return false;
-            if (language && (!f.language || f.language !== language))
+            if (language && (!f.language || !f.language.includes(language)))
               return false;
             if (rating !== null && rating !== undefined && f.rating !== rating)
               return false;

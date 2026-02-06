@@ -21,11 +21,19 @@ const RATINGS = [
   { label: "Rating 3", value: 3 },
 ];
 
+const DISTANCES = [
+  { label: "5 Miles", value: 5 },
+  { label: "10 Miles", value: 10 },
+  { label: "25 Miles", value: 25 },
+  { label: "All Locations", value: "" },
+];
+
 export default function SearchForm({ onSearch, isLoading }) {
   const [address, setAddress] = useState("");
   const [category, setCategory] = useState("All Categories");
   const [language, setLanguage] = useState("All Languages");
   const [rating, setRating] = useState("");
+  const [maxDistance, setMaxDistance] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,6 +43,7 @@ export default function SearchForm({ onSearch, isLoading }) {
       category: category === "All Categories" ? "" : category,
       language: language === "All Languages" ? "" : language,
       rating: rating === "" ? null : Number(rating),
+      maxDistance: maxDistance === "" ? null : Number(maxDistance),
     });
   };
 
@@ -134,6 +143,27 @@ export default function SearchForm({ onSearch, isLoading }) {
               {RATINGS.map((r) => (
                 <option key={r.label} value={r.value}>
                   {r.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="field">
+            <label className="field-label" htmlFor="distance">
+              <svg viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+              </svg>
+              Distance
+            </label>
+            <select
+              id="distance"
+              className="field-select"
+              value={maxDistance}
+              onChange={(e) => setMaxDistance(e.target.value)}
+            >
+              {DISTANCES.map((d) => (
+                <option key={d.label} value={d.value}>
+                  {d.label}
                 </option>
               ))}
             </select>

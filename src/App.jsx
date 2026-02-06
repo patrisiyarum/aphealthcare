@@ -12,6 +12,22 @@ import "./App.css";
 
 const MAX_DRIVING_CALC = 12;
 const MAX_RESULTS = 10;
+const ROUTE_TIMEOUT_MS = 5000;
+
+/** Wraps getDrivingDistance with a timeout so one slow request can't hang the search */
+async function getDrivingDistanceWithTimeout(fromLat, fromLng, toLat, toLng) {
+  try {
+    const result = await Promise.race([
+      getDrivingDistance(fromLat, fromLng, toLat, toLng),
+      new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("timeout")), ROUTE_TIMEOUT_MS)
+      ),
+    ]);
+    return result;
+  } catch {
+    return null;
+  }
+}
 
 export default function App() {
   const [results, setResults] = useState(null);
@@ -23,7 +39,7 @@ export default function App() {
   const [searched, setSearched] = useState(false);
 
   const handleSearch = useCallback(
-    async ({ address, category, language, rating }) => {
+    async ({ address, category, language, rating, maxDistance }) => {
       setIsLoading(true);
       setError("");
       setResults(null);
@@ -62,11 +78,18 @@ export default function App() {
               f.lat,
               f.lng
             ),
-          }));
+          }))
+          .filter((f) => {
+            // Apply distance filter after calculating straight-line distance
+            if (maxDistance !== null && maxDistance !== undefined) {
+              return f.straightLineDistance <= maxDistance;
+            }
+            return true;
+          });
 
         if (withDistance.length === 0) {
           setError(
-            "No facilities match your selected filters. Try broadening your search criteria."
+            "No facilities match your selected filters. Try broadening your search criteria or increasing the distance."
           );
           setIsLoading(false);
           return;
@@ -84,25 +107,22 @@ export default function App() {
           setLoadingStatus(
             `Calculating driving route ${i + 1} of ${closestN.length}...`
           );
-          const driving = await getDrivingDistance(
+          const driving = await getDrivingDistanceWithTimeout(
             userGeo.lat,
             userGeo.lng,
             facility.geocoded.lat,
             facility.geocoded.lng
           );
           withDriving.push({ ...facility, drivingDistance: driving });
-          if (i < closestN.length - 1) {
-            await new Promise((r) => setTimeout(r, 100));
-          }
         }
 
         withDriving.sort((a, b) => {
           const aDist = a.drivingDistance
             ? a.drivingDistance.distanceMeters
-            : Infinity;
+            : a.straightLineDistance * 1609.34;
           const bDist = b.drivingDistance
             ? b.drivingDistance.distanceMeters
-            : Infinity;
+            : b.straightLineDistance * 1609.34;
           return aDist - bDist;
         });
 

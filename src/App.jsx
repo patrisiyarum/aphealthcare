@@ -205,7 +205,6 @@ export default function App() {
       {/* ===== FOOTER ===== */}
       <footer className="site-footer">
         <div className="footer-bottom">
-          <img src="/logo.png" alt="AP Healthcare" className="footer-logo" />
           <p>
             All facility data sourced exclusively from the AP Healthcare
             knowledge base. This tool does not collect or store your address

@@ -12,7 +12,7 @@ const CATEGORIES = [
   "Initial Visit Virtual MD",
 ];
 
-const LANGUAGES = ["All Languages", "Russian"];
+const LANGUAGES = ["All Languages", "English", "Spanish", "Russian"];
 
 const RATINGS = [
   { label: "All Ratings", value: "" },

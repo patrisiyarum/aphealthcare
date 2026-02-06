@@ -96,7 +96,7 @@ export default function FacilityCard({ facility, userAddress, rank }) {
           <div className="fcard-row">
             <span className="fcard-label">Language</span>
             <span className="fcard-value">
-              {language || "Not specified in knowledge base"}
+              {language || "English"}
             </span>
           </div>
 

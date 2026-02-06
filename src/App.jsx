@@ -38,6 +38,26 @@ export default function App() {
   const [error, setError] = useState("");
   const [searched, setSearched] = useState(false);
 
+  const handleViewAll = useCallback(() => {
+    setError("");
+    setSearched(true);
+    setUserAddress("");
+    setUserLocation(null);
+
+    const allWithCoords = facilitiesData
+      .filter((f) => f.lat != null && f.lng != null)
+      .map((f) => ({
+        ...f,
+        geocoded: { lat: f.lat, lng: f.lng },
+        drivingDistance: null,
+      }));
+
+    setResults({
+      facilities: allWithCoords,
+      totalFiltered: allWithCoords.length,
+    });
+  }, []);
+
   const handleSearch = useCallback(
     async ({ address, category, language, rating, maxDistance }) => {
       setIsLoading(true);
@@ -154,7 +174,7 @@ export default function App() {
       <main className="main">
         <div className="container">
           <h1 className="page-title">Provider Map</h1>
-          <SearchForm onSearch={handleSearch} isLoading={isLoading} />
+          <SearchForm onSearch={handleSearch} onViewAll={handleViewAll} isLoading={isLoading} />
 
           {isLoading && (
             <div className="status-card">

@@ -46,15 +46,6 @@
   background: #f5f6f5;
 }
 
-.page-title {
-  font-size: 2.25rem;
-  font-weight: 900;
-  color: #1b5e20;
-  margin-bottom: 1.25rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
 /* ============================================
    SEARCH FORM
    ============================================ */
@@ -461,6 +452,49 @@
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+}
+
+.pagination-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.6rem 1.1rem;
+  background: #fff;
+  color: #2e7d32;
+  border: 1.5px solid #2e7d32;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  border-color: #9ca3af;
+  color: #9ca3af;
+}
+
+.pagination-info {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
 }
 
 /* ============================================

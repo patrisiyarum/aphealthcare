@@ -178,7 +178,7 @@ export default function SearchForm({ onSearch, onViewAll, isLoading }) {
 
   return (
     <form onSubmit={handleSubmit} className="search-form">
-      <h2 className="form-title">Find Your Nearest Facility</h2>
+      <h2 className="form-title">Find Your Nearest Provider</h2>
       <p className="form-subtitle">
         Enter your street address below. Use the filters to narrow results by
         treatment type, language spoken, or facility rating.

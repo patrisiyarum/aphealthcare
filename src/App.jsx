@@ -10,8 +10,7 @@ import {
 } from "./utils/geocoding";
 import "./App.css";
 
-const MAX_DRIVING_CALC = 12;
-const MAX_RESULTS = 10;
+const PER_PAGE = 10;
 const ROUTE_TIMEOUT_MS = 5000;
 
 /** Wraps getDrivingDistance with a timeout so one slow request can't hang the search */
@@ -30,19 +29,51 @@ async function getDrivingDistanceWithTimeout(fromLat, fromLng, toLat, toLng) {
 }
 
 export default function App() {
+  const [allFiltered, setAllFiltered] = useState([]);
   const [results, setResults] = useState(null);
   const [userLocation, setUserLocation] = useState(null);
   const [userAddress, setUserAddress] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingPage, setIsLoadingPage] = useState(false);
   const [loadingStatus, setLoadingStatus] = useState("");
   const [error, setError] = useState("");
   const [searched, setSearched] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  /** Calculate driving distances for a slice of facilities */
+  const calcDrivingForPage = useCallback(
+    async (facilities, userGeo, statusPrefix) => {
+      const withDriving = [];
+      for (let i = 0; i < facilities.length; i++) {
+        const facility = facilities[i];
+        if (statusPrefix) {
+          setLoadingStatus(
+            `${statusPrefix} ${i + 1} of ${facilities.length}...`
+          );
+        }
+        if (userGeo) {
+          const driving = await getDrivingDistanceWithTimeout(
+            userGeo.lat,
+            userGeo.lng,
+            facility.geocoded.lat,
+            facility.geocoded.lng
+          );
+          withDriving.push({ ...facility, drivingDistance: driving });
+        } else {
+          withDriving.push({ ...facility, drivingDistance: null });
+        }
+      }
+      return withDriving;
+    },
+    []
+  );
 
   const handleViewAll = useCallback(() => {
     setError("");
     setSearched(true);
     setUserAddress("");
     setUserLocation(null);
+    setCurrentPage(1);
 
     const allWithCoords = facilitiesData
       .filter((f) => f.lat != null && f.lng != null)
@@ -52,19 +83,53 @@ export default function App() {
         drivingDistance: null,
       }));
 
+    setAllFiltered(allWithCoords);
     setResults({
-      facilities: allWithCoords,
+      facilities: allWithCoords.slice(0, PER_PAGE),
       totalFiltered: allWithCoords.length,
     });
   }, []);
+
+  const handlePageChange = useCallback(
+    async (page) => {
+      setCurrentPage(page);
+      const start = (page - 1) * PER_PAGE;
+      const pageItems = allFiltered.slice(start, start + PER_PAGE);
+
+      if (userLocation) {
+        setIsLoadingPage(true);
+        setLoadingStatus("Calculating driving routes...");
+        const withDriving = await calcDrivingForPage(
+          pageItems,
+          userLocation,
+          "Calculating driving route"
+        );
+        setResults({
+          facilities: withDriving,
+          totalFiltered: allFiltered.length,
+        });
+        setIsLoadingPage(false);
+        setLoadingStatus("");
+      } else {
+        setResults({
+          facilities: pageItems,
+          totalFiltered: allFiltered.length,
+        });
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    [allFiltered, userLocation, calcDrivingForPage]
+  );
 
   const handleSearch = useCallback(
     async ({ address, category, language, rating, maxDistance }) => {
       setIsLoading(true);
       setError("");
       setResults(null);
+      setAllFiltered([]);
       setSearched(true);
       setUserAddress(address);
+      setCurrentPage(1);
       setLoadingStatus("Locating your address...");
 
       try {
@@ -100,7 +165,6 @@ export default function App() {
             ),
           }))
           .filter((f) => {
-            // Apply distance filter after calculating straight-line distance
             if (maxDistance !== null && maxDistance !== undefined) {
               return f.straightLineDistance <= maxDistance;
             }
@@ -119,22 +183,16 @@ export default function App() {
           (a, b) => a.straightLineDistance - b.straightLineDistance
         );
 
-        const closestN = withDistance.slice(0, MAX_DRIVING_CALC);
-        const withDriving = [];
+        // Store all filtered results for pagination
+        setAllFiltered(withDistance);
 
-        for (let i = 0; i < closestN.length; i++) {
-          const facility = closestN[i];
-          setLoadingStatus(
-            `Calculating driving route ${i + 1} of ${closestN.length}...`
-          );
-          const driving = await getDrivingDistanceWithTimeout(
-            userGeo.lat,
-            userGeo.lng,
-            facility.geocoded.lat,
-            facility.geocoded.lng
-          );
-          withDriving.push({ ...facility, drivingDistance: driving });
-        }
+        // Calculate driving for first page only
+        const firstPage = withDistance.slice(0, PER_PAGE);
+        const withDriving = await calcDrivingForPage(
+          firstPage,
+          userGeo,
+          "Calculating driving route"
+        );
 
         withDriving.sort((a, b) => {
           const aDist = a.drivingDistance
@@ -147,7 +205,7 @@ export default function App() {
         });
 
         setResults({
-          facilities: withDriving.slice(0, MAX_RESULTS),
+          facilities: withDriving,
           totalFiltered: withDistance.length,
         });
       } catch (err) {
@@ -158,7 +216,7 @@ export default function App() {
         setLoadingStatus("");
       }
     },
-    []
+    [calcDrivingForPage]
   );
 
   return (
@@ -173,10 +231,9 @@ export default function App() {
       {/* ===== MAIN ===== */}
       <main className="main">
         <div className="container">
-          <h1 className="page-title">Provider Map</h1>
           <SearchForm onSearch={handleSearch} onViewAll={handleViewAll} isLoading={isLoading} />
 
-          {isLoading && (
+          {(isLoading || isLoadingPage) && (
             <div className="status-card">
               <div className="spinner"></div>
               <p className="status-text">{loadingStatus}</p>
@@ -196,7 +253,7 @@ export default function App() {
             </div>
           )}
 
-          {!isLoading && results && results.facilities.length > 0 && (
+          {!isLoading && !isLoadingPage && results && results.facilities.length > 0 && (
             <>
               <MapView
                 userLocation={userLocation}
@@ -207,12 +264,16 @@ export default function App() {
                 facilities={results.facilities}
                 userAddress={userAddress}
                 totalFiltered={results.totalFiltered}
+                currentPage={currentPage}
+                totalPages={Math.ceil(allFiltered.length / PER_PAGE)}
+                onPageChange={handlePageChange}
               />
             </>
           )}
 
           {searched &&
             !isLoading &&
+            !isLoadingPage &&
             !error &&
             (!results || results.facilities.length === 0) && (
               <div className="empty-card">

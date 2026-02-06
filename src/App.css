@@ -60,10 +60,6 @@
   width: 72px;
   height: 72px;
   object-fit: contain;
-  border-radius: 12px;
-  background: #fff;
-  padding: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header-text h1 {
@@ -625,9 +621,6 @@
   width: 48px;
   height: 48px;
   object-fit: contain;
-  border-radius: 8px;
-  background: #fff;
-  padding: 4px;
   margin-bottom: 0.75rem;
 }
 

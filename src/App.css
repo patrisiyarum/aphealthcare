@@ -272,33 +272,6 @@
   cursor: not-allowed;
 }
 
-.btn-view-all {
-  flex-shrink: 0;
-  padding: 0.85rem 1.25rem;
-  background: #fff;
-  color: #2e7d32;
-  border: 1.5px solid #2e7d32;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  transition: background 0.15s, color 0.15s;
-}
-
-.btn-view-all:hover:not(:disabled) {
-  background: #2e7d32;
-  color: #fff;
-}
-
-.btn-view-all:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
 .btn-spinner {
   width: 18px;
   height: 18px;

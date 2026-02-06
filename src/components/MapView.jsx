@@ -1,90 +1,94 @@
-import { useEffect, useRef } from "react";
+import { useCallback, useRef, useEffect, useState } from "react";
 import {
-  MapContainer,
-  TileLayer,
+  GoogleMap,
+  useJsApiLoader,
   Marker,
-  Popup,
-  useMap,
-} from "react-leaflet";
-import L from "leaflet";
+  InfoWindow,
+} from "@react-google-maps/api";
 import { getGoogleMapsDirectionsUrl } from "../utils/geocoding";
 
-// Fix default marker icons in Leaflet + bundlers
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl:
-    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png",
-  iconUrl:
-    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png",
-  shadowUrl:
-    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
-});
+const MAP_CONTAINER = { height: "420px", width: "100%" };
 
-const userIcon = new L.Icon({
-  iconUrl:
-    "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png",
-  shadowUrl:
-    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
+const MAP_OPTIONS = {
+  disableDefaultUI: false,
+  zoomControl: true,
+  mapTypeControl: false,
+  streetViewControl: false,
+  fullscreenControl: true,
+  styles: [
+    {
+      featureType: "poi",
+      stylers: [{ visibility: "off" }],
+    },
+  ],
+};
 
-const greenIcon = new L.Icon({
-  iconUrl:
-    "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png",
-  shadowUrl:
-    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
+const DEFAULT_CENTER = { lat: 33.749, lng: -84.388 };
 
-function FitBounds({ userLocation, facilities }) {
-  const map = useMap();
+export default function MapView({ userLocation, facilities, userAddress }) {
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "",
+  });
 
+  const mapRef = useRef(null);
+  const [activeMarker, setActiveMarker] = useState(null);
+
+  const onLoad = useCallback((map) => {
+    mapRef.current = map;
+  }, []);
+
+  // Fit bounds when data changes
   useEffect(() => {
+    if (!mapRef.current) return;
     if (!userLocation && facilities.length === 0) return;
 
-    const points = [];
+    const bounds = new window.google.maps.LatLngBounds();
+
     if (userLocation) {
-      points.push([userLocation.lat, userLocation.lng]);
+      bounds.extend({ lat: userLocation.lat, lng: userLocation.lng });
     }
+
     facilities.forEach((f) => {
       if (f.geocoded) {
-        points.push([f.geocoded.lat, f.geocoded.lng]);
+        bounds.extend({ lat: f.geocoded.lat, lng: f.geocoded.lng });
       }
     });
 
-    if (points.length > 0) {
-      const bounds = L.latLngBounds(points);
-      map.fitBounds(bounds, { padding: [50, 50], maxZoom: 13 });
-    }
-  }, [userLocation, facilities, map]);
+    mapRef.current.fitBounds(bounds, 50);
 
-  return null;
-}
-
-export default function MapView({ userLocation, facilities, userAddress }) {
-  const mapRef = useRef(null);
+    // Don't zoom in too far for single markers
+    const listener = window.google.maps.event.addListener(
+      mapRef.current,
+      "idle",
+      () => {
+        if (mapRef.current.getZoom() > 14) {
+          mapRef.current.setZoom(14);
+        }
+        window.google.maps.event.removeListener(listener);
+      }
+    );
+  }, [userLocation, facilities]);
 
   if (!userLocation && facilities.length === 0) return null;
 
+  if (!isLoaded) {
+    return (
+      <div className="map-section">
+        <div className="map-wrap" style={{ height: "420px", display: "flex", alignItems: "center", justifyContent: "center", background: "#f5f6f5" }}>
+          <p style={{ color: "#6b7280" }}>Loading map...</p>
+        </div>
+      </div>
+    );
+  }
+
   const center = userLocation
-    ? [userLocation.lat, userLocation.lng]
-    : [33.749, -84.388];
+    ? { lat: userLocation.lat, lng: userLocation.lng }
+    : DEFAULT_CENTER;
 
   return (
     <div className="map-section">
       <h2 className="map-section-title">
-        <svg
-          width="22"
-          height="22"
-          viewBox="0 0 20 20"
-          fill="#2e7d32"
-        >
+        <svg width="22" height="22" viewBox="0 0 20 20" fill="#2e7d32">
           <path
             fillRule="evenodd"
             d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM14 5.586v12.828l2.293-2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707L14 1.586v4z"
@@ -95,104 +99,117 @@ export default function MapView({ userLocation, facilities, userAddress }) {
       </h2>
 
       <div className="map-wrap">
-        <MapContainer
+        <GoogleMap
+          mapContainerStyle={MAP_CONTAINER}
           center={center}
           zoom={10}
-          ref={mapRef}
-          style={{ height: "420px", width: "100%" }}
+          onLoad={onLoad}
+          options={MAP_OPTIONS}
         >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-
+          {/* User location marker */}
           {userLocation && (
             <Marker
-              position={[userLocation.lat, userLocation.lng]}
-              icon={userIcon}
+              position={{ lat: userLocation.lat, lng: userLocation.lng }}
+              icon={{
+                url: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
+                scaledSize: new window.google.maps.Size(40, 40),
+              }}
+              onClick={() => setActiveMarker("user")}
             >
-              <Popup>
-                <strong>Your Location</strong>
-                <br />
-                <span style={{ fontSize: "0.85em", color: "#555" }}>
-                  {userLocation.displayName || "Your address"}
-                </span>
-              </Popup>
+              {activeMarker === "user" && (
+                <InfoWindow onCloseClick={() => setActiveMarker(null)}>
+                  <div>
+                    <strong>Your Location</strong>
+                    <br />
+                    <span style={{ fontSize: "0.85em", color: "#555" }}>
+                      {userLocation.displayName || "Your address"}
+                    </span>
+                  </div>
+                </InfoWindow>
+              )}
             </Marker>
           )}
 
+          {/* Facility markers */}
           {facilities.map((facility) =>
             facility.geocoded ? (
               <Marker
                 key={facility.id}
-                position={[facility.geocoded.lat, facility.geocoded.lng]}
-                icon={
-                  facility.markedGreen ? greenIcon : new L.Icon.Default()
-                }
+                position={{
+                  lat: facility.geocoded.lat,
+                  lng: facility.geocoded.lng,
+                }}
+                icon={{
+                  url: facility.markedGreen
+                    ? "https://maps.google.com/mapfiles/ms/icons/green-dot.png"
+                    : "https://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+                  scaledSize: new window.google.maps.Size(36, 36),
+                }}
+                onClick={() => setActiveMarker(facility.id)}
               >
-                <Popup>
-                  <div style={{ minWidth: 180 }}>
-                    <strong style={{ fontSize: "0.95em" }}>
-                      {facility.name}
-                    </strong>
-                    <br />
-                    <span
-                      style={{
-                        fontSize: "0.8em",
-                        color: "#2e7d32",
-                        fontWeight: 600,
-                      }}
-                    >
-                      {facility.category}
-                    </span>
-                    <br />
-                    <span style={{ fontSize: "0.82em", color: "#555" }}>
-                      {facility.address}
-                    </span>
-                    {facility.drivingDistance && (
-                      <>
-                        <br />
-                        <span
-                          style={{
-                            fontSize: "0.85em",
-                            fontWeight: 700,
-                            color: "#1b5e20",
-                          }}
-                        >
-                          {facility.drivingDistance.distanceMiles} mi &middot;{" "}
-                          {facility.drivingDistance.durationMinutes} min
-                        </span>
-                      </>
-                    )}
-                    {userAddress && facility.address && (
-                      <>
-                        <br />
-                        <a
-                          href={getGoogleMapsDirectionsUrl(
-                            userAddress,
-                            facility.address
-                          )}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{
-                            fontSize: "0.82em",
-                            color: "#2e7d32",
-                            fontWeight: 700,
-                            textDecoration: "underline",
-                          }}
-                        >
-                          Get Directions &rarr;
-                        </a>
-                      </>
-                    )}
-                  </div>
-                </Popup>
+                {activeMarker === facility.id && (
+                  <InfoWindow onCloseClick={() => setActiveMarker(null)}>
+                    <div style={{ minWidth: 180, fontFamily: "Montserrat, sans-serif" }}>
+                      <strong style={{ fontSize: "0.95em" }}>
+                        {facility.name}
+                      </strong>
+                      <br />
+                      <span
+                        style={{
+                          fontSize: "0.8em",
+                          color: "#2e7d32",
+                          fontWeight: 600,
+                        }}
+                      >
+                        {facility.category}
+                      </span>
+                      <br />
+                      <span style={{ fontSize: "0.82em", color: "#555" }}>
+                        {facility.address}
+                      </span>
+                      {facility.drivingDistance && (
+                        <>
+                          <br />
+                          <span
+                            style={{
+                              fontSize: "0.85em",
+                              fontWeight: 700,
+                              color: "#1b5e20",
+                            }}
+                          >
+                            {facility.drivingDistance.distanceMiles} mi &middot;{" "}
+                            {facility.drivingDistance.durationMinutes} min
+                          </span>
+                        </>
+                      )}
+                      {userAddress && facility.address && (
+                        <>
+                          <br />
+                          <a
+                            href={getGoogleMapsDirectionsUrl(
+                              userAddress,
+                              facility.address
+                            )}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              fontSize: "0.82em",
+                              color: "#2e7d32",
+                              fontWeight: 700,
+                              textDecoration: "underline",
+                            }}
+                          >
+                            Get Directions →
+                          </a>
+                        </>
+                      )}
+                    </div>
+                  </InfoWindow>
+                )}
               </Marker>
             ) : null
           )}
-
-          <FitBounds userLocation={userLocation} facilities={facilities} />
-        </MapContainer>
+        </GoogleMap>
       </div>
     </div>
   );

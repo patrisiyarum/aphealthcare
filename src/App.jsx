@@ -123,21 +123,17 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* ===== TOP NAV ===== */}
-      <nav className="topnav">
-        <div className="topnav-inner">
-          <img src="/logo.png" alt="AP Healthcare" className="topnav-logo" />
+      {/* ===== LOGO BAR ===== */}
+      <div className="logobar">
+        <div className="logobar-inner">
+          <img src="/logo.png" alt="AP Healthcare" className="logobar-img" />
         </div>
-      </nav>
+      </div>
 
       {/* ===== HERO ===== */}
       <section className="hero">
         <div className="hero-inner">
           <h1 className="hero-title">Provider Map</h1>
-          <p className="hero-sub">
-            Find your nearest healthcare facility based on driving distance,
-            language spoken, and facility ratings.
-          </p>
         </div>
       </section>
 

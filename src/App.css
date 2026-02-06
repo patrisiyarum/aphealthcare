@@ -133,6 +133,52 @@
   color: #9ca3af;
 }
 
+.address-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.address-row .field-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.btn-locate {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  color: #2e7d32;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.btn-locate:hover:not(:disabled) {
+  border-color: #2e7d32;
+  background: #f0faf0;
+}
+
+.btn-locate:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-locate svg {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-spinner--sm {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
 .field-select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='%236b7280'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
   background-repeat: no-repeat;

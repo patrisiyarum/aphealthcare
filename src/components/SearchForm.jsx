@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 const CATEGORIES = [
   "All Categories",
@@ -34,6 +34,49 @@ export default function SearchForm({ onSearch, isLoading }) {
   const [language, setLanguage] = useState("All Languages");
   const [rating, setRating] = useState("");
   const [maxDistance, setMaxDistance] = useState("");
+  const [locating, setLocating] = useState(false);
+
+  const useMyLocation = useCallback(() => {
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser.");
+      return;
+    }
+    setLocating(true);
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        try {
+          const { latitude, longitude } = position.coords;
+          const res = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&addressdetails=1`,
+            { headers: { "User-Agent": "APHealthcareFacilityFinder/1.0" } }
+          );
+          const data = await res.json();
+          if (data && data.address) {
+            const a = data.address;
+            const parts = [
+              a.house_number,
+              a.road,
+              a.city || a.town || a.village || a.hamlet,
+              a.state,
+              a.postcode,
+            ].filter(Boolean);
+            setAddress(parts.join(", "));
+          } else {
+            setAddress(`${latitude}, ${longitude}`);
+          }
+        } catch {
+          alert("Could not determine your address. Please enter it manually.");
+        } finally {
+          setLocating(false);
+        }
+      },
+      () => {
+        alert("Location access denied. Please enter your address manually.");
+        setLocating(false);
+      },
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -68,15 +111,33 @@ export default function SearchForm({ onSearch, isLoading }) {
             </svg>
             Your Street Address
           </label>
-          <input
-            id="address"
-            type="text"
-            className="field-input"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-            placeholder="e.g. 123 Peachtree St, Atlanta, GA 30301"
-            required
-          />
+          <div className="address-row">
+            <input
+              id="address"
+              type="text"
+              className="field-input"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              placeholder="e.g. 123 Peachtree St, Atlanta, GA 30301"
+              required
+            />
+            <button
+              type="button"
+              className="btn-locate"
+              onClick={useMyLocation}
+              disabled={locating || isLoading}
+              title="Use my current location"
+            >
+              {locating ? (
+                <span className="btn-spinner btn-spinner--sm"></span>
+              ) : (
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Filters row */}
